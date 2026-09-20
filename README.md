@@ -10,21 +10,20 @@
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/hero.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img src="assets/hero.svg" alt="Poras Nagar — AI Engineer, Distributed Systems, Full-Stack Developer" width="100%">
+  <img src="assets/hero-light.svg" alt="Poras Nagar — AI Engineer, Distributed Systems, Full-Stack Developer" width="100%">
 </picture>
 
 <!-- ─────────────────────────── NAV ─────────────────────────── -->
 <div align="center">
 
-<a href="#systems"><img src="https://img.shields.io/badge/Systems-161b22?style=for-the-badge&labelColor=0d1117&logo=rocket&logoColor=7c5cff" alt="Systems"></a>
-<a href="#stack"><img src="https://img.shields.io/badge/Stack-161b22?style=for-the-badge&labelColor=0d1117&logo=stackblitz&logoColor=22d3ee" alt="Stack"></a>
-<a href="#signals"><img src="https://img.shields.io/badge/Signals-161b22?style=for-the-badge&labelColor=0d1117&logo=githubactions&logoColor=f59e0b" alt="Signals"></a>
-<a href="#contact"><img src="https://img.shields.io/badge/Contact-161b22?style=for-the-badge&labelColor=0d1117&logo=maildotru&logoColor=e6edf3" alt="Contact"></a>
+<a href="#systems"><img src="https://img.shields.io/badge/Systems.exe-000080?style=flat-square&logo=windows95&logoColor=white" alt="Systems"></a>
+<a href="#stack"><img src="https://img.shields.io/badge/Stack.sys-008080?style=flat-square&logo=terminal&logoColor=white" alt="Stack"></a>
+<a href="#signals"><img src="https://img.shields.io/badge/Signals.log-008000?style=flat-square&logo=diagnostics&logoColor=white" alt="Signals"></a>
+<a href="#contact"><img src="https://img.shields.io/badge/Contact.bat-800080?style=flat-square&logo=mail&logoColor=white" alt="Contact"></a>
 
-<!-- ✎ your three real links -->
-<a href="https://porasnagar.github.io"><img src="https://img.shields.io/badge/Portfolio-porasnagar.github.io-7c5cff?style=for-the-badge&labelColor=0d1117&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
-<a href="https://unlistedstox.com"><img src="https://img.shields.io/badge/Live_product-UnlistedStox-22d3ee?style=for-the-badge&labelColor=0d1117&logo=tradingview&logoColor=white" alt="UnlistedStox"></a>
-<a href="https://linkedin.com/in/poras-nagar-036886189"><img src="https://img.shields.io/badge/LinkedIn-in%2Fporas--nagar-0A66C2?style=for-the-badge&labelColor=0d1117&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://porasnagar.github.io"><img src="https://img.shields.io/badge/Portfolio.url-000080?style=flat-square&logo=internetexplorer&logoColor=white" alt="Portfolio"></a>
+<a href="https://unlistedstox.com"><img src="https://img.shields.io/badge/UnlistedStox.exe-008080?style=flat-square&logo=tradingview&logoColor=white" alt="UnlistedStox"></a>
+<a href="https://linkedin.com/in/poras-nagar-036886189"><img src="https://img.shields.io/badge/LinkedIn.url-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 
 </div>
 
@@ -65,11 +64,13 @@ open_to:  [ AI engineering, applied AI, backend-heavy full-stack ]
 <tr>
 <td width="50%" valign="top">
 
+<a href="https://unlistedstox.com" target="_blank">
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/card-unlistedstox.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-unlistedstox-light.svg">
-  <img src="assets/card-unlistedstox.svg" width="100%" alt="UnlistedStox Console">
+  <img src="assets/card-unlistedstox-light.svg" width="100%" alt="UnlistedStox Console">
 </picture>
+</a>
 
 <h4>UnlistedStox</h4>
 <img src="https://img.shields.io/badge/live-in_production-22d3ee?style=flat-square&labelColor=0d1117" alt="">
@@ -94,7 +95,7 @@ a live price for shares that never touch an exchange.</p>
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/card-triage.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-triage-light.svg">
-  <img src="assets/card-triage.svg" width="100%" alt="WhatsApp Triage Console">
+  <img src="assets/card-triage-light.svg" width="100%" alt="WhatsApp Triage Console">
 </picture>
 
 <h4>Hospital triage over WhatsApp</h4>
@@ -121,7 +122,7 @@ hospital's catchment area.</p>
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/card-scrapers.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-scrapers-light.svg">
-  <img src="assets/card-scrapers.svg" width="100%" alt="Scraper &amp; Queue Console">
+  <img src="assets/card-scrapers-light.svg" width="100%" alt="Scraper &amp; Queue Console">
 </picture>
 
 <h4>Market scrapers &amp; queue broker</h4>
@@ -146,7 +147,7 @@ normalises it into one schema before anything downstream sees it.</p>
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/card-agents.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/card-agents-light.svg">
-  <img src="assets/card-agents.svg" width="100%" alt="Hermes Agentic CI Console">
+  <img src="assets/card-agents-light.svg" width="100%" alt="Hermes Agentic CI Console">
 </picture>
 
 <h4>Multi-agent internal tooling</h4>
@@ -305,6 +306,6 @@ with a concrete question in it.
 <a href="https://porasnagar.github.io"><img src="https://img.shields.io/badge/porasnagar.github.io-7c5cff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0d1117" alt="Portfolio"></a>
 
 <br><br>
-<sub>Hero and dividers are hand-written SVG in <a href="assets/"><code>assets/</code></a> — no template, no generator.</sub>
+<sub>Dual Retro OS Architecture (Microsoft Windows 98 Light Mode &amp; 90s Phosphor CRT Dark Mode) • Auto-updated via GitHub Actions.</sub>
 
 </div>

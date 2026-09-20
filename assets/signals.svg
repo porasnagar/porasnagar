@@ -1,151 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Poras Nagar — Production Signals &amp; Telemetry">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="1200" height="350" role="img" aria-label="CRT Phosphor Live Telemetry Monitor">
   <defs>
-    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0f17"/>
-      <stop offset="1" stop-color="#0d1117"/>
-    </linearGradient>
-
-    <radialGradient id="bloomA" cx="0.20" cy="0.45" r="0.55">
-      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="bloomB" cx="0.82" cy="0.50" r="0.50">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
-    </radialGradient>
-
-    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0"   stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.04"/>
-      <stop offset="1"   stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#1b2230" stroke-width="1"/>
-    </pattern>
-
-    <clipPath id="frame"><rect width="1200" height="320" rx="16"/></clipPath>
+    <filter id="sig_glow">
+      <feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
   <style>
-    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace; }
-    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    .drift { animation: drift 28s linear infinite; }
-    @keyframes drift { to { transform: translate(-40px, -40px); } }
-    .sweep { animation: sweep 8s cubic-bezier(.4,0,.2,1) infinite; }
-    @keyframes sweep { 0% { transform: translateX(-400px); } 60%,100% { transform: translateX(1300px); } }
-    .beat { animation: beat 2.4s ease-in-out infinite; }
-    @keyframes beat { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
-    .bar-py { animation: expandPy 1.8s cubic-bezier(.2,.8,.2,1) forwards; }
-    @keyframes expandPy { from { width: 0; } to { width: 230px; } }
-    .bar-ts { animation: expandTs 2.0s cubic-bezier(.2,.8,.2,1) forwards; }
-    @keyframes expandTs { from { width: 0; } to { width: 160px; } }
-    .bar-sql { animation: expandSql 2.2s cubic-bezier(.2,.8,.2,1) forwards; }
-    @keyframes expandSql { from { width: 0; } to { width: 75px; } }
-    .bar-ops { animation: expandOps 2.4s cubic-bezier(.2,.8,.2,1) forwards; }
-    @keyframes expandOps { from { width: 0; } to { width: 37px; } }
-    @media (prefers-reduced-motion: reduce) {
-      .drift, .sweep, .beat, .bar-py, .bar-ts, .bar-sql, .bar-ops { animation: none; }
-    }
+    .crt { font-family: ui-monospace, "Courier New", monospace; font-size: 12px; fill: #00ff66; }
+    .amber { font-family: ui-monospace, "Courier New", monospace; font-size: 12px; fill: #ffb000; }
+    .dim { font-family: ui-monospace, "Courier New", monospace; font-size: 11px; fill: #1d7734; }
   </style>
 
-  <g clip-path="url(#frame)">
-    <rect width="1200" height="320" fill="url(#canvas)"/>
-    <g class="drift"><rect x="-40" y="-40" width="1280" height="400" fill="url(#grid)"/></g>
-    <rect width="1200" height="320" fill="url(#bloomA)"/>
-    <rect width="1200" height="320" fill="url(#bloomB)"/>
-    <g class="sweep"><rect width="300" height="320" fill="url(#sheen)"/></g>
+  <rect width="1200" height="350" rx="8" fill="#141714" stroke="#252b25" stroke-width="3"/>
+  <rect x="8" y="8" width="1184" height="334" rx="6" fill="#040804"/>
 
-    <!-- Chrome Header -->
-    <rect width="1200" height="48" fill="#090d14" opacity="0.78"/>
-    <line x1="0" y1="48" x2="1200" y2="48" stroke="#1b2230" stroke-width="1"/>
-    <circle cx="32" cy="24" r="5" fill="#ff5f57"/>
-    <circle cx="50" cy="24" r="5" fill="#febc2e"/>
-    <circle cx="68" cy="24" r="5" fill="#28c840"/>
-    <text class="mono" x="92" y="29" font-size="12.5" fill="#5b6675" letter-spacing="0.05em">porasnagar / telemetry / performance_signals.json</text>
-    <circle cx="1030" cy="24" r="4" fill="#28c840" class="beat"/>
-    <text class="mono" text-anchor="end" x="1168" y="29" font-size="12" fill="#6b7788" letter-spacing="0.05em">telemetry streaming</text>
+  <g filter="url(#sig_glow)" transform="translate(36, 34)">
+    <text class="amber" x="0" y="0" font-weight="bold">NETSTAT / REAL-TIME PRODUCTION TELEMETRY &amp; GITHUB TELEMETRY</text>
+    <text class="dim" x="0" y="18">SOURCE: api.github.com/users/porasnagar • VERIFIED ENCRYPTION: SHA-256 • POLLING: AUTOMATED</text>
+    <text class="crt" x="0" y="38">═════════════════════════════════════════════════════════════════════════════════════════════════</text>
 
-    <!-- LEFT COLUMN: Key Production Signals -->
-    <g transform="translate(40, 72)">
-      <rect width="530" height="224" rx="10" fill="#0b1019" stroke="#1b2230" stroke-width="1"/>
-      <text class="mono" x="24" y="32" font-size="11" fill="#7c5cff" font-weight="bold" letter-spacing="0.1em">SYSTEM PERFORMANCE &amp; VOLUME</text>
-      
-      <!-- Metric 1 -->
-      <g transform="translate(24, 48)">
-        <rect width="225" height="68" rx="8" fill="#0e1422" stroke="#1f2a3c" stroke-width="1"/>
-        <text class="mono" x="16" y="24" font-size="10.5" fill="#8b98ab">OTC PRICING LATENCY</text>
-        <text class="sans" x="16" y="52" font-size="22" fill="#22d3ee" font-weight="700">&lt; 15 ms</text>
-        <circle cx="198" cy="28" r="3.5" fill="#22d3ee" class="beat"/>
-      </g>
-
-      <!-- Metric 2 -->
-      <g transform="translate(280, 48)">
-        <rect width="225" height="68" rx="8" fill="#0e1422" stroke="#1f2a3c" stroke-width="1"/>
-        <text class="mono" x="16" y="24" font-size="10.5" fill="#8b98ab">SCRAPER CLUSTER</text>
-        <text class="sans" x="16" y="52" font-size="22" fill="#7c5cff" font-weight="700">10k+ <tspan font-size="14" fill="#8b98ab" font-weight="400">pg/min</tspan></text>
-      </g>
-
-      <!-- Metric 3 -->
-      <g transform="translate(24, 134)">
-        <rect width="225" height="68" rx="8" fill="#0e1422" stroke="#1f2a3c" stroke-width="1"/>
-        <text class="mono" x="16" y="24" font-size="10.5" fill="#8b98ab">WHATSAPP WEBHOOK ACK</text>
-        <text class="sans" x="16" y="52" font-size="22" fill="#f59e0b" font-weight="700">&lt; 200 ms</text>
-        <circle cx="198" cy="28" r="3.5" fill="#f59e0b" class="beat"/>
-      </g>
-
-      <!-- Metric 4 -->
-      <g transform="translate(280, 134)">
-        <rect width="225" height="68" rx="8" fill="#0e1422" stroke="#1f2a3c" stroke-width="1"/>
-        <text class="mono" x="16" y="24" font-size="10.5" fill="#8b98ab">PLATFORMS IN PROD</text>
-        <text class="sans" x="16" y="52" font-size="22" fill="#28c840" font-weight="700">4 <tspan font-size="14" fill="#8b98ab" font-weight="400">Live Suites</tspan></text>
-        <circle cx="198" cy="28" r="3.5" fill="#28c840" class="beat"/>
-      </g>
+    <!-- 2 Columns in ASCII -->
+    <!-- Left Column: Metrics -->
+    <g transform="translate(0, 60)">
+      <text class="amber" x="0" y="0">[ ENGINE TELEMETRY ]</text>
+      <text class="crt" x="0" y="24">┌────────────────────────────────────────────────────────┐</text>
+      <text class="crt" x="0" y="44">│ OTC Valuation Latency : &lt; 15 ms  (B-tree index query)  │</text>
+      <text class="crt" x="0" y="64">│ Distributed Scrapers  : 10k+ pages/min (Backpressure)  │</text>
+      <text class="crt" x="0" y="84">│ WhatsApp Webhook Ack  : &lt; 200 ms (HMAC-SHA256 verified)│</text>
+      <text class="crt" x="0" y="104">│ Total GitHub Commits  : 1,200+ across repositories    │</text>
+      <text class="crt" x="0" y="124">│ Public Repositories   : 18 active repositories      │</text>
+      <text class="crt" x="0" y="144">│ Multi-Agent CI Tools  : Hermes Autonomous Doc Pipeline │</text>
+      <text class="crt" x="0" y="164">└────────────────────────────────────────────────────────┘</text>
     </g>
 
-    <!-- RIGHT COLUMN: Stack Language Distribution -->
-    <g transform="translate(610, 72)">
-      <rect width="550" height="224" rx="10" fill="#0b1019" stroke="#1b2230" stroke-width="1"/>
-      <text class="mono" x="24" y="32" font-size="11" fill="#22d3ee" font-weight="bold" letter-spacing="0.1em">ACTIVE CODEBASE DISTRIBUTION</text>
+    <!-- Right Column: Language Distribution Bars in ASCII -->
+    <g transform="translate(560, 60)">
+      <text class="amber" x="0" y="0">[ CODEBASE COMPOSITION &amp; BYTE DISTRIBUTION ]</text>
+      <text class="crt" x="0" y="24">Python (Backend, ML, Models)   [29%]</text>
+      <text class="crt" x="0" y="40">████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <!-- Full composite bar -->
-      <g transform="translate(24, 52)">
-        <rect width="502" height="12" rx="6" fill="#151b27"/>
-        <rect width="230" height="12" rx="6" fill="#22d3ee" class="bar-py"/>
-        <rect x="232" width="160" height="12" rx="0" fill="#7c5cff" class="bar-ts"/>
-        <rect x="394" width="75" height="12" rx="0" fill="#f59e0b" class="bar-sql"/>
-        <rect x="471" width="31" height="12" rx="6" fill="#28c840" class="bar-ops"/>
-      </g>
+      <text class="crt" x="0" y="70">TypeScript &amp; Node (React/APIs)  [49%]</text>
+      <text class="crt" x="0" y="86">██████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <!-- Language Legend Items -->
-      <g transform="translate(24, 86)">
-        <!-- Python -->
-        <circle cx="6" cy="14" r="5" fill="#22d3ee"/>
-        <text class="sans" x="20" y="18" font-size="13" fill="#e6edf3" font-weight="600">Python</text>
-        <text class="mono" x="20" y="34" font-size="11" fill="#8b98ab">Backend, ML &amp; Scrapers</text>
-        <text class="mono" x="210" y="20" font-size="13" fill="#22d3ee" font-weight="700">46%</text>
+      <text class="crt" x="0" y="116">SQL, Redis &amp; Queue Ingestion    [12%]</text>
+      <text class="crt" x="0" y="132">████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-        <!-- TypeScript -->
-        <circle cx="270" cy="14" r="5" fill="#7c5cff"/>
-        <text class="sans" x="284" y="18" font-size="13" fill="#e6edf3" font-weight="600">TypeScript / Node</text>
-        <text class="mono" x="284" y="34" font-size="11" fill="#8b98ab">React, Next.js, Express</text>
-        <text class="mono" x="480" y="20" font-size="13" fill="#7c5cff" font-weight="700">32%</text>
-
-        <!-- SQL / Data -->
-        <circle cx="6" cy="66" r="5" fill="#f59e0b"/>
-        <text class="sans" x="20" y="70" font-size="13" fill="#e6edf3" font-weight="600">SQL &amp; Messaging</text>
-        <text class="mono" x="20" y="86" font-size="11" fill="#8b98ab">PostgreSQL, Redis, RabbitMQ</text>
-        <text class="mono" x="210" y="72" font-size="13" fill="#f59e0b" font-weight="700">15%</text>
-
-        <!-- Docker / CI -->
-        <circle cx="270" cy="66" r="5" fill="#28c840"/>
-        <text class="sans" x="284" y="70" font-size="13" fill="#e6edf3" font-weight="600">Infra &amp; CI/CD</text>
-        <text class="mono" x="284" y="86" font-size="11" fill="#8b98ab">Docker, Actions, Linux</text>
-        <text class="mono" x="480" y="72" font-size="13" fill="#28c840" font-weight="700">7%</text>
-      </g>
+      <text class="crt" x="0" y="162">Infra, Docker &amp; CI Workflows    [20%]</text>
+      <text class="crt" x="0" y="178">██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
     </g>
 
-    <line x1="0" y1="319" x2="1200" y2="319" stroke="#1b2230" stroke-width="1"/>
+    <text class="dim" x="0" y="260">─────────────────────────────────────────────────────────────────────────────────────────</text>
+    <text class="dim" x="0" y="278">[TELEMETRY STREAM: SYNCHRONIZED] [CRON_DAEMON: 18:30 UTC / 00:00 IST] [STATUS: NORMAL]</text>
   </g>
 </svg>

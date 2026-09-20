@@ -38,23 +38,34 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # ── 3D contribution calendar ─────────────────────────────────
-  # This one commits into main, under profile-3d-contrib/.
-  calendar:
+  # ── 3D contribution calendar & live telemetry ────────────────
+  # This one commits into main, under profile-3d-contrib/ and assets/.
+  calendar-and-telemetry:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Update Live Retro Telemetry SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/update_telemetry.py
 
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: commit calendar
+      - name: commit updated assets
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile-3d-contrib
-          git diff --staged --quiet || git commit -m "chore: refresh 3d contribution calendar"
+          git add profile-3d-contrib assets/signals*.svg
+          git diff --staged --quiet || git commit -m "chore: refresh 3d calendar & telemetry SVGs"
           git push

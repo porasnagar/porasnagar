@@ -1,207 +1,128 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Poras Nagar — Production Tech Stack">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="1200" height="370" role="img" aria-label="Windows 98 Device Manager Tech Stack">
   <defs>
-    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#f4f6fa"/>
+    <linearGradient id="stk_w98title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000080"/><stop offset="100%" stop-color="#1084d0"/>
     </linearGradient>
-
-    <radialGradient id="bloomA" cx="0.15" cy="0.40" r="0.55">
-      <stop offset="0" stop-color="#0891b2" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#0891b2" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="bloomB" cx="0.85" cy="0.65" r="0.55">
-      <stop offset="0" stop-color="#6d28d9" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#6d28d9" stop-opacity="0"/>
-    </radialGradient>
-
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#e3e8ef" stroke-width="1"/>
-    </pattern>
-
-    <clipPath id="frame"><rect width="1200" height="340" rx="16"/></clipPath>
+    <clipPath id="stk_cp"><rect width="1200" height="370" rx="4"/></clipPath>
   </defs>
 
   <style>
-    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace; }
-    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-    .beat { animation: beat 2.4s ease-in-out infinite; }
-    @keyframes beat { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+    .w98 { font-family: "MS Sans Serif", Tahoma, -apple-system, sans-serif; font-size: 11.5px; }
+    .w98-bold { font-family: "MS Sans Serif", Tahoma, -apple-system, sans-serif; font-size: 11.5px; font-weight: bold; }
+    .mono { font-family: ui-monospace, "Courier New", monospace; font-size: 11px; }
   </style>
 
-  <g clip-path="url(#frame)">
-    <rect width="1200" height="340" fill="url(#canvas)"/>
-    <rect width="1200" height="340" fill="url(#grid)"/>
-    <rect width="1200" height="340" fill="url(#bloomA)"/>
-    <rect width="1200" height="340" fill="url(#bloomB)"/>
+  <g clip-path="url(#stk_cp)">
+    <!-- Main Window Outer Frame -->
+    <rect width="1200" height="370" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+    <line x1="1" y1="1" x2="1199" y2="1" stroke="#ffffff" stroke-width="2"/>
+    <line x1="1" y1="1" x2="1" y2="369" stroke="#ffffff" stroke-width="2"/>
+    <line x1="2" y1="368" x2="1198" y2="368" stroke="#808080" stroke-width="2"/>
+    <line x1="1198" y1="2" x2="1198" y2="368" stroke="#808080" stroke-width="2"/>
 
-    <!-- Header Chrome -->
-    <rect width="1200" height="48" fill="#eaeff5" opacity="0.85"/>
-    <line x1="0" y1="48" x2="1200" y2="48" stroke="#e3e8ef" stroke-width="1"/>
-    <circle cx="32" cy="24" r="5" fill="#dc2626"/>
-    <circle cx="50" cy="24" r="5" fill="#d97706"/>
-    <circle cx="68" cy="24" r="5" fill="#16a34a"/>
-    <text class="mono" x="92" y="29" font-size="12.5" fill="#64748b" letter-spacing="0.05em">porasnagar / config / production_stack.yaml</text>
-    <circle cx="1040" cy="24" r="4" fill="#0891b2" class="beat"/>
-    <text class="mono" text-anchor="end" x="1168" y="29" font-size="12" fill="#64748b" letter-spacing="0.05em">18 production services active</text>
+    <!-- Title Bar -->
+    <g transform="translate(4, 4)">
+      <rect width="1192" height="24" fill="url(#stk_w98title)"/>
+      <text class="w98" x="10" y="17" font-size="12" font-weight="bold" fill="#ffffff">System Properties - [Device Manager: Engineering Tech Stack Drivers]</text>
+      <!-- Buttons -->
+      <g transform="translate(1148, 3)">
+        <rect x="0" y="0" width="18" height="18" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+        <line x1="1" y1="1" x2="17" y2="1" stroke="#ffffff"/><text class="w98" x="5" y="13" font-weight="bold">?</text>
+        <rect x="22" y="0" width="18" height="18" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+        <line x1="23" y1="1" x2="39" y2="1" stroke="#ffffff"/><path d="M26 4 L35 13 M35 4 L26 13" stroke="#000000" stroke-width="2"/>
+      </g>
+    </g>
 
-    <!-- 4 Category Columns -->
-    <!-- Column 1: Backend & Distributed -->
-    <g transform="translate(36, 72)">
-      <rect width="268" height="240" rx="10" fill="#f8fafc" stroke="#e3e8ef" stroke-width="1"/>
-      <rect x="0" y="0" width="268" height="36" rx="10" fill="#edf2f7"/>
-      <rect x="0" y="26" width="268" height="10" fill="#edf2f7"/>
-      <text class="mono" x="16" y="23" font-size="11" fill="#0891b2" font-weight="700" letter-spacing="0.08em">SYSTEMS &amp; BACKEND</text>
-      
-      <g transform="translate(14, 48)">
+    <!-- Tabs: [General] [Device Manager (Active)] [Hardware Profiles] [Performance] -->
+    <g transform="translate(12, 34)">
+      <!-- Inactive Tab 1 -->
+      <rect x="0" y="4" width="70" height="20" rx="2" fill="#c0c0c0" stroke="#808080"/>
+      <text class="w98" x="12" y="18" fill="#404040">General</text>
+
+      <!-- Active Tab: Device Manager -->
+      <rect x="74" y="0" width="130" height="25" rx="3" fill="#c0c0c0" stroke="#808080"/>
+      <line x1="75" y1="1" x2="203" y2="1" stroke="#ffffff"/>
+      <line x1="75" y1="1" x2="75" y2="24" stroke="#ffffff"/>
+      <text class="w98-bold" x="84" y="17" fill="#000000">Device Manager</text>
+
+      <!-- Inactive Tab 3 -->
+      <rect x="208" y="4" width="120" height="20" rx="2" fill="#c0c0c0" stroke="#808080"/>
+      <text class="w98" x="216" y="18" fill="#404040">Hardware Profiles</text>
+
+      <!-- Inactive Tab 4 -->
+      <rect x="332" y="4" width="90" height="20" rx="2" fill="#c0c0c0" stroke="#808080"/>
+      <text class="w98" x="342" y="18" fill="#404040">Performance</text>
+    </g>
+
+    <!-- Tab Sunken Panel Surface -->
+    <g transform="translate(12, 58)">
+      <rect width="1176" height="268" fill="#c0c0c0" stroke="#808080" stroke-width="1"/>
+      <line x1="1" y1="1" x2="1175" y2="1" stroke="#ffffff"/>
+      <line x1="1" y1="1" x2="1" y2="267" stroke="#ffffff"/>
+
+      <!-- View by type radio buttons -->
+      <g transform="translate(16, 12)">
+        <circle cx="6" cy="6" r="5" fill="#ffffff" stroke="#000000"/>
+        <circle cx="6" cy="6" r="2.5" fill="#000000"/>
+        <text class="w98" x="18" y="10">View devices by connection &amp; system architecture</text>
+      </g>
+
+      <!-- Tree View White Box (Device Tree) -->
+      <g transform="translate(16, 32)">
+        <rect width="960" height="220" fill="#ffffff" stroke="#808080" stroke-width="1"/>
+        <line x1="1" y1="1" x2="959" y2="1" stroke="#404040"/>
+        <line x1="1" y1="1" x2="1" y2="219" stroke="#404040"/>
+
+        <!-- Computer Root Node -->
+        <g transform="translate(16, 20)">
+          <text class="mono" x="0" y="0" font-weight="bold" fill="#000080">[-] Computer (PORAS_NAGAR_RUNTIME_SYSTEM)</text>
+          
+          <!-- Category 1: Systems & Backend -->
+          <text class="mono" x="20" y="22" font-weight="bold" fill="#000000">├── [+] Systems &amp; Distributed Backend</text>
+          <text class="mono" x="50" y="38" fill="#404040">│   ├── Python 3.12 (Primary API Engine)</text>
+          <text class="mono" x="50" y="52" fill="#404040">│   ├── FastAPI / Express / Node.js (High-Throughput Services)</text>
+          <text class="mono" x="50" y="66" fill="#404040">│   └── RabbitMQ / Celery (Back-Pressured Message Broker)</text>
+
+          <!-- Category 2: AI & ML -->
+          <text class="mono" x="20" y="86" font-weight="bold" fill="#000000">├── [+] AI &amp; Quantitative Modeling</text>
+          <text class="mono" x="50" y="102" fill="#404040">│   ├── TensorFlow / PyTorch (Valuation &amp; Regression Models)</text>
+          <text class="mono" x="50" y="116" fill="#404040">│   └── OpenCV / scikit-learn / Pandas / NumPy</text>
+
+          <!-- Category 3: Databases -->
+          <text class="mono" x="20" y="136" font-weight="bold" fill="#000000">├── [+] Data Storage &amp; Cache Layers</text>
+          <text class="mono" x="50" y="152" fill="#404040">│   ├── PostgreSQL (B-Tree Partitioned Time-Series)</text>
+          <text class="mono" x="50" y="166" fill="#404040">│   └── Redis / MongoDB / MySQL</text>
+
+          <!-- Category 4: Platforms -->
+          <text class="mono" x="20" y="186" font-weight="bold" fill="#000000">└── [+] Frontend &amp; Cloud Infrastructure</text>
+          <text class="mono" x="50" y="200" fill="#404040">    └── TypeScript • React 18 • Docker • Linux (POSIX) • GitHub Actions</text>
+        </g>
+      </g>
+
+      <!-- Right Action Push Buttons -->
+      <g transform="translate(994, 32)">
         <g transform="translate(0, 0)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#0891b2" stroke-width="1" stroke-opacity="0.4"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Python 3.12</text>
+          <rect width="164" height="26" fill="#c0c0c0" stroke="#000000"/>
+          <line x1="1" y1="1" x2="163" y2="1" stroke="#ffffff"/><text class="w98" x="48" y="17">Properties</text>
         </g>
-        <g transform="translate(122, 0)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">FastAPI</text>
+        <g transform="translate(0, 36)">
+          <rect width="164" height="26" fill="#c0c0c0" stroke="#000000"/>
+          <line x1="1" y1="1" x2="163" y2="1" stroke="#ffffff"/><text class="w98" x="54" y="17">Refresh</text>
         </g>
-        <g transform="translate(0, 42)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Node.js</text>
-        </g>
-        <g transform="translate(122, 42)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Express</text>
-        </g>
-        <g transform="translate(0, 84)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">RabbitMQ</text>
-        </g>
-        <g transform="translate(122, 84)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Celery</text>
-        </g>
-        <g transform="translate(0, 126)">
-          <rect width="234" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#64748b">Meta WhatsApp Cloud API</text>
+        <g transform="translate(0, 72)">
+          <rect width="164" height="26" fill="#c0c0c0" stroke="#000000"/>
+          <line x1="1" y1="1" x2="163" y2="1" stroke="#ffffff"/><text class="w98" x="62" y="17">Print...</text>
         </g>
       </g>
     </g>
 
-    <!-- Column 2: AI & Machine Learning -->
-    <g transform="translate(320, 72)">
-      <rect width="268" height="240" rx="10" fill="#f8fafc" stroke="#e3e8ef" stroke-width="1"/>
-      <rect x="0" y="0" width="268" height="36" rx="10" fill="#edf2f7"/>
-      <rect x="0" y="26" width="268" height="10" fill="#edf2f7"/>
-      <text class="mono" x="16" y="23" font-size="11" fill="#6d28d9" font-weight="700" letter-spacing="0.08em">AI &amp; MACHINE LEARNING</text>
+    <!-- Bottom Buttons: [OK] [Cancel] -->
+    <g transform="translate(1006, 334)">
+      <rect width="84" height="24" fill="#c0c0c0" stroke="#000000"/>
+      <line x1="1" y1="1" x2="83" y2="1" stroke="#ffffff"/><text class="w98-bold" x="32" y="16">OK</text>
 
-      <g transform="translate(14, 48)">
-        <g transform="translate(0, 0)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#6d28d9" stroke-width="1" stroke-opacity="0.4"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">TensorFlow</text>
-        </g>
-        <g transform="translate(122, 0)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">PyTorch</text>
-        </g>
-        <g transform="translate(0, 42)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">scikit-learn</text>
-        </g>
-        <g transform="translate(122, 42)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">OpenCV</text>
-        </g>
-        <g transform="translate(0, 84)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Pandas / NumPy</text>
-        </g>
-        <g transform="translate(122, 84)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Regression</text>
-        </g>
-        <g transform="translate(0, 126)">
-          <rect width="234" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#64748b">Multi-Agent CI Tooling</text>
-        </g>
-      </g>
+      <rect x="94" width="84" height="24" fill="#c0c0c0" stroke="#000000"/>
+      <line x1="95" y1="1" x2="177" y2="1" stroke="#ffffff"/><text class="w98" x="116" y="16">Cancel</text>
     </g>
-
-    <!-- Column 3: Data & Ingestion -->
-    <g transform="translate(604, 72)">
-      <rect width="268" height="240" rx="10" fill="#f8fafc" stroke="#e3e8ef" stroke-width="1"/>
-      <rect x="0" y="0" width="268" height="36" rx="10" fill="#edf2f7"/>
-      <rect x="0" y="26" width="268" height="10" fill="#edf2f7"/>
-      <text class="mono" x="16" y="23" font-size="11" fill="#b45309" font-weight="700" letter-spacing="0.08em">DATA &amp; DATABASES</text>
-
-      <g transform="translate(14, 48)">
-        <g transform="translate(0, 0)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#b45309" stroke-width="1" stroke-opacity="0.4"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">PostgreSQL</text>
-        </g>
-        <g transform="translate(122, 0)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Redis</text>
-        </g>
-        <g transform="translate(0, 42)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">MongoDB</text>
-        </g>
-        <g transform="translate(122, 42)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">MySQL</text>
-        </g>
-        <g transform="translate(0, 84)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">B-Tree Indices</text>
-        </g>
-        <g transform="translate(122, 84)">
-          <rect width="112" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Time-Series</text>
-        </g>
-        <g transform="translate(0, 126)">
-          <rect width="234" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#64748b">Dead-Letter Queue Replay</text>
-        </g>
-      </g>
-    </g>
-
-    <!-- Column 4: Frontend & Infra -->
-    <g transform="translate(888, 72)">
-      <rect width="276" height="240" rx="10" fill="#f8fafc" stroke="#e3e8ef" stroke-width="1"/>
-      <rect x="0" y="0" width="276" height="36" rx="10" fill="#edf2f7"/>
-      <rect x="0" y="26" width="276" height="10" fill="#edf2f7"/>
-      <text class="mono" x="16" y="23" font-size="11" fill="#16a34a" font-weight="700" letter-spacing="0.08em">FRONTEND &amp; PLATFORMS</text>
-
-      <g transform="translate(14, 48)">
-        <g transform="translate(0, 0)">
-          <rect width="118" height="30" rx="6" fill="#ffffff" stroke="#16a34a" stroke-width="1" stroke-opacity="0.4"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">TypeScript</text>
-        </g>
-        <g transform="translate(128, 0)">
-          <rect width="118" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">React 18</text>
-        </g>
-        <g transform="translate(0, 42)">
-          <rect width="118" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Next.js</text>
-        </g>
-        <g transform="translate(128, 42)">
-          <rect width="118" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">TailwindCSS</text>
-        </g>
-        <g transform="translate(0, 84)">
-          <rect width="118" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">Docker</text>
-        </g>
-        <g transform="translate(128, 84)">
-          <rect width="118" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#1f2937">GitHub Actions</text>
-        </g>
-        <g transform="translate(0, 126)">
-          <rect width="246" height="30" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-          <text class="mono" x="12" y="19" font-size="11" fill="#64748b">Linux Environment / Bash</text>
-        </g>
-      </g>
-    </g>
-
-    <line x1="0" y1="339" x2="1200" y2="339" stroke="#e3e8ef" stroke-width="1"/>
   </g>
 </svg>

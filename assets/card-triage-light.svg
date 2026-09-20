@@ -1,41 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 170" width="580" height="170" role="img" aria-label="WhatsApp Triage Console">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 176" width="580" height="176" role="img" aria-label="TRIAGE_GATEWAY">
   <defs>
-    <clipPath id="c2"><rect width="580" height="170" rx="10"/></clipPath>
+    <linearGradient id="tb_TRI" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000080"/><stop offset="100%" stop-color="#1084d0"/>
+    </linearGradient>
+    <clipPath id="cp_TRI"><rect width="580" height="176" rx="2"/></clipPath>
   </defs>
   <style>
-    .mono { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
-    .beat { animation: b 2.2s infinite ease-in-out; }
-    @keyframes b { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+    .w98 { font-family: "MS Sans Serif", Tahoma, -apple-system, sans-serif; font-size: 11px; }
+    .mono { font-family: ui-monospace, "Courier New", monospace; font-size: 11px; }
   </style>
-  <g clip-path="url(#c2)">
-    <rect width="580" height="170" fill="#ffffff"/>
-    <rect width="580" height="36" fill="#eaeff5"/>
-    <line x1="0" y1="36" x2="580" y2="36" stroke="#e3e8ef" stroke-width="1"/>
-    <circle cx="20" cy="18" r="4.5" fill="#ff5f57"/>
-    <circle cx="34" cy="18" r="4.5" fill="#febc2e"/>
-    <circle cx="48" cy="18" r="4.5" fill="#28c840"/>
-    <text class="mono" x="66" y="22" font-size="11" fill="#64748b">service: whatsapp_triage_dispatcher.js</text>
-    <circle cx="504" cy="18" r="3.5" fill="#16a34a" class="beat"/>
-    <text class="mono" text-anchor="end" x="562" y="22" font-size="10.5" fill="#16a34a">TIER-2 ACTIVE</text>
+  <g clip-path="url(#cp_TRI)">
+    <!-- Body -->
+    <rect width="580" height="176" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+    <line x1="1" y1="1" x2="579" y2="1" stroke="#ffffff" stroke-width="2"/>
+    <line x1="1" y1="1" x2="1" y2="175" stroke="#ffffff" stroke-width="2"/>
+    <line x1="2" y1="174" x2="578" y2="174" stroke="#808080" stroke-width="2"/>
+    <line x1="578" y1="2" x2="578" y2="174" stroke="#808080" stroke-width="2"/>
 
-    <!-- Webhook latency & Auth -->
-    <g transform="translate(18, 48)">
-      <rect width="260" height="106" rx="6" fill="#f8fafc" stroke="#e3e8ef" stroke-width="1"/>
-      <text class="mono" x="12" y="20" font-size="10" fill="#64748b">WEBHOOK ACK LATENCY</text>
-      <text class="mono" x="12" y="52" font-size="24" font-weight="700" fill="#25D366">142 <tspan font-size="14" fill="#64748b">ms</tspan></text>
-      <text class="mono" x="12" y="74" font-size="10.5" fill="#64748b">Target window: &lt; 200 ms</text>
-      <text class="mono" x="12" y="94" font-size="10" fill="#25D366">HMAC-SHA256 verified</text>
+    <!-- Title bar -->
+    <rect x="4" y="4" width="572" height="20" fill="url(#tb_TRI)"/>
+    <text class="w98" x="10" y="18" font-weight="bold" fill="#ffffff">TRIAGE_GATEWAY.EXE</text>
+    <!-- Buttons -->
+    <g transform="translate(528, 5)">
+      <rect x="0" y="0" width="14" height="14" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+      <line x1="1" y1="1" x2="13" y2="1" stroke="#ffffff"/><line x1="3" y1="10" x2="10" y2="10" stroke="#000000" stroke-width="2"/>
+      <rect x="18" y="0" width="14" height="14" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+      <line x1="19" y1="1" x2="31" y2="1" stroke="#ffffff"/><path d="M22 3 L29 10 M29 3 L22 10" stroke="#000000" stroke-width="1.5"/>
     </g>
 
-    <g transform="translate(294, 48)">
-      <rect width="268" height="106" rx="6" fill="#f8fafc" stroke="#e3e8ef" stroke-width="1"/>
-      <text class="mono" x="14" y="20" font-size="10" fill="#64748b">MULTI-TURN TRIAGE SESSION</text>
-      <rect x="14" y="32" width="180" height="18" rx="4" fill="#25D366" opacity="0.2"/>
-      <text class="mono" x="22" y="45" font-size="9.5" fill="#25D366">Patient Intake Confirmed</text>
-      <rect x="14" y="56" width="220" height="18" rx="4" fill="#e3e8ef"/>
-      <text class="mono" x="22" y="69" font-size="9.5" fill="#64748b">Expiring Signed Report Link</text>
-      <text class="mono" x="14" y="94" font-size="10" fill="#16a34a">● MongoDB Session Locked</text>
+    <!-- Content Area (Sunken Inset) -->
+    <g transform="translate(8, 28)">
+      <rect width="564" height="118" fill="#ffffff" stroke="#808080" stroke-width="1"/>
+      <line x1="1" y1="1" x2="563" y2="1" stroke="#404040"/>
+      <line x1="1" y1="1" x2="1" y2="117" stroke="#404040"/>
+      
+      <!-- Metrics Boxes inside -->
+      <g transform="translate(14, 12)">
+        <rect width="256" height="52" fill="#f0f0f0" stroke="#808080" stroke-width="1"/>
+        <text class="w98" x="8" y="16" fill="#000080" font-weight="bold">Webhook Ack Window</text>
+        <text class="mono" x="8" y="38" font-size="16" font-weight="bold" fill="#008000">142ms (&lt; 200ms)</text>
+      </g>
+      <g transform="translate(284, 12)">
+        <rect width="266" height="52" fill="#f0f0f0" stroke="#808080" stroke-width="1"/>
+        <text class="w98" x="8" y="16" fill="#000080" font-weight="bold">Intake Authentication</text>
+        <text class="mono" x="8" y="38" font-size="16" font-weight="bold" fill="#800080">HMAC-SHA256 OK</text>
+      </g>
+
+      <text class="w98" x="16" y="86" fill="#000000">WhatsApp booking, triage intake &amp; expiring reports without app install.</text>
+      <text class="mono" x="16" y="104" fill="#808080">STATUS: PROD DAEMON EXECUTION VERIFIED</text>
     </g>
-    <rect width="580" height="170" rx="10" fill="none" stroke="#e3e8ef" stroke-width="1"/>
+
+    <!-- Bottom Status Bar -->
+    <rect x="8" y="150" width="564" height="18" fill="#c0c0c0" stroke="#808080" stroke-width="1"/>
+    <text class="w98" x="14" y="163" fill="#000000">100% Task Complete • 0 Faults</text>
   </g>
 </svg>

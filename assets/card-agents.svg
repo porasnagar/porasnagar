@@ -1,41 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 170" width="580" height="170" role="img" aria-label="Hermes Agentic CI Console">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 176" width="580" height="176" role="img" aria-label="HERMES_AGENT">
   <defs>
-    <clipPath id="c4"><rect width="580" height="170" rx="10"/></clipPath>
+    <filter id="cglow_HER">
+      <feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
   <style>
-    .mono { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; }
-    .beat { animation: b 2.2s infinite ease-in-out; }
-    @keyframes b { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+    .crt { font-family: ui-monospace, "Courier New", monospace; font-size: 11.5px; fill: #00ff66; }
+    .amber { font-family: ui-monospace, "Courier New", monospace; font-size: 11.5px; fill: #ffb000; }
+    .dim { font-family: ui-monospace, "Courier New", monospace; font-size: 10px; fill: #1d7734; }
   </style>
-  <g clip-path="url(#c4)">
-    <rect width="580" height="170" fill="#0b0f17"/>
-    <rect width="580" height="36" fill="#090d14"/>
-    <line x1="0" y1="36" x2="580" y2="36" stroke="#1b2230" stroke-width="1"/>
-    <circle cx="20" cy="18" r="4.5" fill="#ff5f57"/>
-    <circle cx="34" cy="18" r="4.5" fill="#febc2e"/>
-    <circle cx="48" cy="18" r="4.5" fill="#28c840"/>
-    <text class="mono" x="66" y="22" font-size="11" fill="#8b98ab">agent: hermes_document_pipeline.py</text>
-    <circle cx="504" cy="18" r="3.5" fill="#28c840" class="beat"/>
-    <text class="mono" text-anchor="end" x="562" y="22" font-size="10.5" fill="#28c840">CI RUNNING</text>
+  <rect width="580" height="176" rx="6" fill="#080e08" stroke="#223322" stroke-width="2"/>
+  <rect x="6" y="6" width="568" height="164" rx="4" fill="#030803"/>
 
-    <!-- Multi-Agent Artifact Pipeline -->
-    <g transform="translate(18, 48)">
-      <rect width="260" height="106" rx="6" fill="#0e1422" stroke="#1b2230" stroke-width="1"/>
-      <text class="mono" x="12" y="20" font-size="10" fill="#8b98ab">AUTONOMOUS DOC SYNTHESIS</text>
-      <text class="mono" x="12" y="44" font-size="11.5" fill="#e6edf3">Templates in → DOCX/PPTX/XLSX</text>
-      <text class="mono" x="12" y="66" font-size="11.5" fill="#8b98ab">Versioned directly in CI commits</text>
-      <text class="mono" x="12" y="94" font-size="10" fill="#f59e0b">Tool-calling shared across 4 repos</text>
-    </g>
-
-    <g transform="translate(294, 48)">
-      <rect width="268" height="106" rx="6" fill="#0e1422" stroke="#1b2230" stroke-width="1"/>
-      <text class="mono" x="14" y="20" font-size="10" fill="#8b98ab">INTERNAL WORKFLOW DISPATCH</text>
-      <rect x="14" y="32" width="220" height="18" rx="4" fill="#f59e0b" opacity="0.2"/>
-      <text class="mono" x="22" y="45" font-size="9.5" fill="#f59e0b">Multi-Agent Planner: Resolved</text>
-      <rect x="14" y="56" width="190" height="18" rx="4" fill="#1b2230"/>
-      <text class="mono" x="22" y="69" font-size="9.5" fill="#8b98ab">Artifact: Deck &amp; Sheet Compiled</text>
-      <text class="mono" x="14" y="94" font-size="10" fill="#28c840">● Fast Execution in GitHub Actions</text>
-    </g>
-    <rect width="580" height="170" rx="10" fill="none" stroke="#1b2230" stroke-width="1"/>
+  <g filter="url(#cglow_HER)" transform="translate(18, 24)">
+    <text class="dim" x="0" y="0">┌──[ DAEMON: hermes_document_ci.py ]──────────────────────────────┐</text>
+    <text class="amber" x="12" y="24">&gt; Document Synthesis: <tspan fill="#00ff66" font-weight="bold">DOCX/PPTX/XLSX</tspan></text>
+    <text class="amber" x="12" y="44">&gt; CI Tool-Calling: <tspan fill="#00ff66" font-weight="bold">4 Repositories</tspan></text>
+    <text class="crt" x="12" y="70">Autonomous agent drafts engineering paperwork &amp; decks inside CI.</text>
+    <text class="dim" x="12" y="94">[SYS_STATUS: RUNNING] [LOG_PIPE: VERIFIED] [PID: 4096]</text>
+    <text class="dim" x="0" y="120">└─────────────────────────────────────────────────────────────┘</text>
   </g>
 </svg>
