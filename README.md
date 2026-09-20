@@ -65,6 +65,12 @@ open_to:  [ AI engineering, applied AI, backend-heavy full-stack ]
 <tr>
 <td width="50%" valign="top">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-unlistedstox.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-unlistedstox-light.svg">
+  <img src="assets/card-unlistedstox.svg" width="100%" alt="UnlistedStox Console">
+</picture>
+
 <h4>UnlistedStox</h4>
 <img src="https://img.shields.io/badge/live-in_production-22d3ee?style=flat-square&labelColor=0d1117" alt="">
 <img src="https://img.shields.io/badge/domain-fintech-7c5cff?style=flat-square&labelColor=0d1117" alt="">
@@ -84,6 +90,12 @@ a live price for shares that never touch an exchange.</p>
 
 </td>
 <td width="50%" valign="top">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-triage.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-triage-light.svg">
+  <img src="assets/card-triage.svg" width="100%" alt="WhatsApp Triage Console">
+</picture>
 
 <h4>Hospital triage over WhatsApp</h4>
 <img src="https://img.shields.io/badge/channel-Meta_Cloud_API-25D366?style=flat-square&labelColor=0d1117" alt="">
@@ -106,6 +118,12 @@ hospital's catchment area.</p>
 <tr>
 <td width="50%" valign="top">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-scrapers.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-scrapers-light.svg">
+  <img src="assets/card-scrapers.svg" width="100%" alt="Scraper &amp; Queue Console">
+</picture>
+
 <h4>Market scrapers &amp; queue broker</h4>
 <img src="https://img.shields.io/badge/throughput-10k%2B_pages%2Fmin-7c5cff?style=flat-square&labelColor=0d1117" alt="">
 <img src="https://img.shields.io/badge/queue-Redis_%2B_RabbitMQ-FF6600?style=flat-square&labelColor=0d1117" alt="">
@@ -124,6 +142,12 @@ normalises it into one schema before anything downstream sees it.</p>
 
 </td>
 <td width="50%" valign="top">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-agents.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-agents-light.svg">
+  <img src="assets/card-agents.svg" width="100%" alt="Hermes Agentic CI Console">
+</picture>
 
 <h4>Multi-agent internal tooling</h4>
 <img src="https://img.shields.io/badge/scope-internal_platform-22d3ee?style=flat-square&labelColor=0d1117" alt="">
@@ -151,6 +175,14 @@ paperwork off the team's plate.</p>
 <a name="stack"></a>
 <h3 align="center">Stack</h3>
 <p align="center"><sub>Grouped by what I reach for, not by what I've read about.</sub></p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/stack.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
+  <img src="assets/stack.svg" width="100%" alt="Production Tech Stack">
+</picture>
+
+<br><br>
 
 <div align="center">
 
@@ -228,19 +260,11 @@ paperwork off the team's plate.</p>
 <a name="signals"></a>
 <h3 align="center">Signals</h3>
 
-<div align="center">
-
-<!-- ✎ change username= in all four URLs -->
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api?username=porasnagar&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=00000000&title_color=7c5cff&icon_color=22d3ee&text_color=8b98ab&ring_color=f59e0b">
-  <img src="https://github-readme-stats.vercel.app/api?username=porasnagar&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=00000000&title_color=6d28d9&icon_color=0891b2&text_color=4a5565&ring_color=b45309" height="165" alt="GitHub stats">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/signals.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/signals-light.svg">
+  <img src="assets/signals.svg" width="100%" alt="Production Signals &amp; Telemetry">
 </picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=porasnagar&layout=compact&hide_border=true&langs_count=8&bg_color=00000000&title_color=7c5cff&text_color=8b98ab">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=porasnagar&layout=compact&hide_border=true&langs_count=8&bg_color=00000000&title_color=6d28d9&text_color=4a5565" height="165" alt="Top languages">
-</picture>
-
-</div>
 
 <details open>
 <summary><b>&nbsp;Contribution calendar, in 3D</b></summary>
