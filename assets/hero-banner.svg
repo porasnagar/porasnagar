@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="100%" height="260" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e17" />
+      <stop offset="50%" stop-color="#08090f" />
+      <stop offset="100%" stop-color="#05060a" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(99, 102, 241, 0.5)" />
+      <stop offset="50%" stop-color="rgba(255, 255, 255, 0.08)" />
+      <stop offset="100%" stop-color="rgba(56, 189, 248, 0.3)" />
+    </linearGradient>
+
+    <radialGradient id="auraGlow" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="rgba(99, 102, 241, 0.18)" />
+      <stop offset="100%" stop-color="rgba(0, 0, 0, 0)" />
+    </radialGradient>
+
+    <radialGradient id="cyanAura" cx="85%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="rgba(6, 182, 212, 0.12)" />
+      <stop offset="100%" stop-color="rgba(0, 0, 0, 0)" />
+    </radialGradient>
+
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.02)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 38px; font-weight: 800; fill: #ffffff; letter-spacing: -0.03em; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: url(#accentGrad); letter-spacing: -0.01em; }
+    .desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; fill: #94a3b8; line-height: 1.5; }
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11px; }
+    .badge-text { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11px; font-weight: 600; fill: #34d399; }
+    .tag-text { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 11px; fill: #94a3b8; }
+  </style>
+
+  <!-- Card Background with subtle rounded border -->
+  <rect x="1" y="1" width="878" height="258" rx="20" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+  
+  <!-- Subtle Grid Overlay -->
+  <rect x="2" y="2" width="876" height="256" rx="19" fill="url(#grid)" />
+  
+  <!-- Ambient Glows -->
+  <rect x="2" y="2" width="876" height="256" rx="19" fill="url(#auraGlow)" />
+  <rect x="2" y="2" width="876" height="256" rx="19" fill="url(#cyanAura)" />
+
+  <!-- Status Pill -->
+  <g transform="translate(36, 28)">
+    <rect width="250" height="26" rx="13" fill="rgba(16, 185, 129, 0.1)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1" />
+    <circle cx="15" cy="13" r="4" fill="#10b981" />
+    <circle cx="15" cy="13" r="7" fill="none" stroke="#10b981" stroke-width="1" opacity="0.6" />
+    <text x="28" y="17" class="badge-text">ONLINE · AI ENGINEER @ ENXTAI</text>
+  </g>
+
+  <!-- Monogram Brand Pill -->
+  <g transform="translate(800, 24)">
+    <rect width="44" height="44" rx="14" fill="rgba(99, 102, 241, 0.15)" stroke="rgba(99, 102, 241, 0.3)" stroke-width="1" />
+    <text x="22" y="27" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#818cf8" text-anchor="middle">PN</text>
+  </g>
+
+  <!-- Name & Titles -->
+  <text x="36" y="98" class="title">Poras Nagar</text>
+  <text x="36" y="124" class="subtitle">AI Engineer &amp; Distributed Systems Architect</text>
+  <text x="36" y="148" class="desc">Engineering autonomous AI systems, real-time unlisted equity trading engines, and 10k+ req/min scrapers.</text>
+
+  <!-- Divider Line -->
+  <line x1="36" y1="175" x2="844" y2="175" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1" />
+
+  <!-- Bottom Telemetry Grid (3 columns) -->
+  <!-- Col 1 -->
+  <g transform="translate(36, 192)">
+    <text x="0" y="14" class="tag-text" fill="#64748b">ORGANIZATION</text>
+    <text x="0" y="34" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">EnxtAI <tspan font-weight="400" fill="#94a3b8">· AI Systems Lead</tspan></text>
+  </g>
+
+  <!-- Col 2 -->
+  <g transform="translate(260, 192)">
+    <text x="0" y="14" class="tag-text" fill="#64748b">FLAGSHIP DEPLOYED</text>
+    <text x="0" y="34" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#38bdf8">UnlistedStox.com <tspan font-weight="400" fill="#94a3b8">(Live)</tspan></text>
+  </g>
+
+  <!-- Col 3 -->
+  <g transform="translate(500, 192)">
+    <text x="0" y="14" class="tag-text" fill="#64748b">ACADEMIC FOUNDATION</text>
+    <text x="0" y="34" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#c084fc">B.Tech CSE <tspan font-weight="400" fill="#94a3b8">(AI &amp; ML) · Amity Univ</tspan></text>
+  </g>
+
+  <!-- Col 4 -->
+  <g transform="translate(740, 192)">
+    <text x="0" y="14" class="tag-text" fill="#64748b">LOCATION</text>
+    <text x="0" y="34" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#34d399">Noida, IN <tspan font-weight="400" fill="#94a3b8">(IST)</tspan></text>
+  </g>
+</svg>

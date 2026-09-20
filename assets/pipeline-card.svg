@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" width="100%" height="210" fill="none">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e101c" />
+      <stop offset="100%" stop-color="#06070c" />
+    </linearGradient>
+
+    <linearGradient id="pipeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(168, 85, 247, 0.4)" />
+      <stop offset="100%" stop-color="rgba(56, 189, 248, 0.2)" />
+    </linearGradient>
+
+    <linearGradient id="nodeActive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .h-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 20px; font-weight: 800; fill: #ffffff; }
+    .sub-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; fill: #94a3b8; }
+    .badge { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; fill: #c084fc; }
+    .node-title { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #ffffff; }
+    .node-sub { font-family: monospace; font-size: 8px; fill: #818cf8; }
+    .meta-val { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #38bdf8; }
+  </style>
+
+  <!-- Card Body -->
+  <rect x="1" y="1" width="878" height="208" rx="16" fill="url(#pipeBg)" stroke="url(#pipeBorder)" stroke-width="1.2" />
+
+  <!-- Top Info -->
+  <g transform="translate(28, 20)">
+    <rect width="180" height="22" rx="6" fill="rgba(168, 85, 247, 0.12)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1" />
+    <circle cx="10" cy="11" r="3.5" fill="#c084fc" />
+    <text x="20" y="15" class="badge">10,000+ REQ / MIN ENGINE</text>
+
+    <text x="0" y="52" class="h-text">Distributed Scrapers &amp; Event Queue Broker</text>
+    <text x="0" y="72" class="sub-text">High-throughput data extraction cluster processing unstructured financial market filings and unlisted dealer portals.</text>
+  </g>
+
+  <!-- Visual Node Architecture Flow -->
+  <g transform="translate(28, 102)">
+    <!-- Node 1: Web Feeds -->
+    <rect x="0" y="0" width="130" height="50" rx="10" fill="#131726" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <text x="65" y="24" class="node-title" text-anchor="middle">Market Targets</text>
+    <text x="65" y="38" class="node-sub" text-anchor="middle">50+ Portals</text>
+
+    <!-- Arrow 1 -->
+    <path d="M 130 25 L 165 25" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="165,22 173,25 165,28" fill="#818cf8" />
+
+    <!-- Node 2: Scrapy -->
+    <rect x="173" y="0" width="130" height="50" rx="10" fill="#131726" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <text x="238" y="24" class="node-title" text-anchor="middle">Scrapy Cluster</text>
+    <text x="238" y="38" class="node-sub" text-anchor="middle">Dockerized Nodes</text>
+
+    <!-- Arrow 2 -->
+    <path d="M 303 25 L 338 25" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="338,22 346,25 338,28" fill="#818cf8" />
+
+    <!-- Node 3: Redis -->
+    <rect x="346" y="0" width="130" height="50" rx="10" fill="url(#nodeActive)" stroke="#818cf8" stroke-width="1.5" />
+    <text x="411" y="24" class="node-title" text-anchor="middle">Redis Cache</text>
+    <text x="411" y="38" class="node-sub" text-anchor="middle">SHA-256 Dedup</text>
+
+    <!-- Arrow 3 -->
+    <path d="M 476 25 L 511 25" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="511,22 519,25 511,28" fill="#818cf8" />
+
+    <!-- Node 4: RabbitMQ -->
+    <rect x="519" y="0" width="140" height="50" rx="10" fill="#131726" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <text x="589" y="24" class="node-title" text-anchor="middle">RabbitMQ Broker</text>
+    <text x="589" y="38" class="node-sub" text-anchor="middle">Dead-Letter Exch.</text>
+
+    <!-- Arrow 4 -->
+    <path d="M 659 25 L 694 25" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 2" />
+    <polygon points="694,22 702,25 694,28" fill="#818cf8" />
+
+    <!-- Node 5: Postgres -->
+    <rect x="702" y="0" width="122" height="50" rx="10" fill="#131726" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <text x="763" y="24" class="node-title" text-anchor="middle">PostgreSQL</text>
+    <text x="763" y="38" class="node-sub" text-anchor="middle">Valuation Store</text>
+  </g>
+
+  <!-- Bottom Telemetry Metrics -->
+  <g transform="translate(28, 172)">
+    <text x="0" y="14" font-family="monospace" font-size="10" fill="#64748b">THROUGHPUT: <tspan fill="#34d399" font-weight="700">10,000+ req/min</tspan></text>
+    <text x="240" y="14" font-family="monospace" font-size="10" fill="#64748b">REDIS LATENCY: <tspan fill="#38bdf8" font-weight="700">&lt;0.5ms lookup</tspan></text>
+    <text x="480" y="14" font-family="monospace" font-size="10" fill="#64748b">PACKET DROP RATE: <tspan fill="#a78bfa" font-weight="700">0.00% (Guaranteed)</tspan></text>
+    <text x="720" y="14" font-family="monospace" font-size="10" fill="#64748b">UPTIME: <tspan fill="#34d399" font-weight="700">99.9%</tspan></text>
+  </g>
+</svg>

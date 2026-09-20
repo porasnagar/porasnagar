@@ -1,107 +1,120 @@
 <div align="center">
 
 <a href="https://porasnagar.github.io">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=180&section=header&text=Poras%20Nagar&fontSize=52&fontColor=ffffff&fontAlignY=42&desc=AI%20Engineer%20%7C%20Distributed%20Systems%20%7C%20Full-Stack&descFontSize=18&descAlignY=64&descAlign=50" width="100%"/>
+  <img src="./assets/header.svg" alt="Poras Nagar — AI Engineer &amp; Distributed Systems" width="100%" />
 </a>
 
 <p align="center">
-  <a href="https://porasnagar.github.io">
-    <img src="https://img.shields.io/badge/LIVE_PORTFOLIO-porasnagar.github.io-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio" />
-  </a>
-  <a href="https://unlistedstox.com">
-    <img src="https://img.shields.io/badge/FLAGSHIP_PLATFORM-unlistedstox.com-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="UnlistedStox" />
-  </a>
-  <a href="https://linkedin.com/in/poras-nagar-036886189">
-    <img src="https://img.shields.io/badge/LINKEDIN-in%2Fporas--nagar-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:poras9868@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-poras9868%40gmail.com-10b981?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
-
-<p align="center">
-  <strong>Architecting Autonomous AI Systems, Real-Time Trading Engines & Resilient Distributed Backends.</strong><br/>
-  AI Engineer at <strong>EnxtAI</strong> · B.Tech in CSE (AI & ML) from <strong>Amity University, Noida</strong>.
+  <a href="https://porasnagar.github.io"><strong>Website (porasnagar.github.io)</strong></a> &nbsp;·&nbsp;
+  <a href="https://unlistedstox.com"><strong>UnlistedStox.com</strong></a> &nbsp;·&nbsp;
+  <a href="https://linkedin.com/in/poras-nagar-036886189"><strong>LinkedIn</strong></a> &nbsp;·&nbsp;
+  <a href="mailto:poras9868@gmail.com"><strong>Email</strong></a>
 </p>
 
 </div>
 
 ---
 
-### ⚡ Selected Production Systems
+### Overview
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>📈 <a href="https://unlistedstox.com">UnlistedStox.com</a> (Live Flagship)</h4>
-      <p>AI-powered unlisted equity trading and market intelligence platform. Engineered predictive valuation models using historical transaction precedents, real-time dealer bid/ask spread ingestion, and automated portfolio analytics.</p>
-      <p><strong>Stack:</strong> <code>Python</code> · <code>TensorFlow</code> · <code>React</code> · <code>Node.js</code> · <code>PostgreSQL</code> · <code>FastAPI</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🏥 Hospital Management & WhatsApp AI Engine</h4>
-      <p>Full-stack hospital workflow automation integrating Meta WhatsApp Cloud API. Automated patient triage, dynamic doctor appointment booking, secure health record retrieval, and automated diagnostic report dispatch.</p>
-      <p><strong>Stack:</strong> <code>Meta WhatsApp API</code> · <code>Node.js</code> · <code>Express</code> · <code>MongoDB</code> · <code>Webhooks</code></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🕷️ Intelligent Market Scrapers & Queue Broker</h4>
-      <p>High-throughput data extraction pipelines for unlisted share market intelligence and regulatory filings. Built with dynamic proxy rotation, SHA-256 fingerprint deduplication, and resilient message brokers handling 10,000+ extractions/min.</p>
-      <p><strong>Stack:</strong> <code>Python</code> · <code>Scrapy</code> · <code>Redis</code> · <code>RabbitMQ</code> · <code>PostgreSQL</code> · <code>Docker</code></p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🤖 Multi-Agent Intelligence Suite</h4>
-      <p>Internal engineering acceleration platform deployed at EnxtAI. Integrates Google Stitch for UI layout synthesis, Antigravity for autonomous multi-step planning loops and tool execution, and Hermes for inter-agent communication.</p>
-      <p><strong>Stack:</strong> <code>Google Stitch</code> · <code>Antigravity</code> · <code>Hermes</code> · <code>GitHub Actions CI/CD</code></p>
-    </td>
-  </tr>
-</table>
+I am an AI Engineer at **EnxtAI** in Noida, India, with a B.Tech in Computer Science and Engineering (specializing in Artificial Intelligence and Machine Learning) from Amity University (2021–2025).
+
+My core work centers on backend systems, data pipelines, and machine learning infrastructure:
+* Designing pricing and valuation engines for pre-IPO unlisted equities at **UnlistedStox.com**.
+* Implementing asynchronous webhook listeners and messaging flows over the **Meta WhatsApp Business Cloud API** for healthcare triage and appointment booking.
+* Operating distributed web scraping clusters using **Python Scrapy**, **Redis** atomic sets for deduplication, and **RabbitMQ** message brokers for decoupled database ingestion.
+* Maintaining internal agentic workflows using **Google Stitch**, **Antigravity**, **Hermes**, and **GitHub Actions** CI/CD pipelines.
 
 ---
 
-### 🛠️ Production Skills Matrix
+### Production Systems
 
-```
-AI & ML              Python · TensorFlow · Deep Learning · Computer Vision · NLP · LLM Orchestration
-Distributed Backend  Redis (Queue & Dedup) · RabbitMQ (Broker) · Node.js · Express · PostgreSQL · MongoDB
-APIs & Integrations  Meta WhatsApp Business API · Webhooks · REST APIs · Microservices
-Frontend             React.js · Next.js · TypeScript · Modern Tailwind CSS · Interactive WebGL/SVG
-DevOps & Cloud       Docker · GitHub Actions CI/CD · Linux Daemon Services · Cloudflare
-```
+#### 1. UnlistedStox ([unlistedstox.com](https://unlistedstox.com))
+*OTC Equity Valuation and Real-Time Pricing Engine*
+
+* **Problem:** Unlisted Indian equity transactions happen off-exchange with fragmented liquidity, opaque bid/ask spreads, and delayed pricing data.
+* **Architecture:** 
+  * Node.js and Express REST services ingest dealer transactions, trade confirmations, and registrar filings.
+  * A Python worker evaluates historical funding rounds, cap-table structures, and transaction filings to calculate fair valuation estimates.
+  * Time-series price and volume records are stored in PostgreSQL with indexed B-tree lookups on ticker symbols and timestamp windows for fast chart queries.
+  * A React interface displays live bid/ask spreads, liquidity indicators, and historical transactions.
+* **Stack:** Python, TensorFlow, React, Node.js, Express, PostgreSQL, FastAPI.
+
+#### 2. Hospital Management WhatsApp Integration
+*Meta WhatsApp Cloud API Webhook Service and Automated Patient Triage*
+
+* **Problem:** Manual hospital desk reception created phone bottlenecks for slot booking, report collection, and routine inquiries.
+* **Architecture:**
+  * Express.js webhook listener verifying Meta `X-Hub-Signature-256` HMAC signatures on every incoming message payload.
+  * Sub-200ms acknowledgement response SLA to Meta servers to prevent automatic message retries.
+  * Asynchronous dispatcher routing incoming patient intents (appointment booking, doctor slot queries, prescription verification, lab test lookup).
+  * MongoDB document store tracking patient schema, doctor availability schedules, and multi-step conversation states.
+  * Automated generation and dispatch of encrypted pathology report URLs directly within the WhatsApp thread.
+* **Stack:** Meta WhatsApp Business API, Node.js, Express, MongoDB, Webhooks, React.
+
+#### 3. High-Throughput Financial Scrapers & Queue Broker
+*Distributed Data Harvesting Cluster with Deduplication and Message Queues*
+
+* **Problem:** Gathering continuous valuation sheets, financial filings, and registrar updates across dozens of target portals without IP throttling or data loss during traffic spikes.
+* **Architecture:**
+  * Multi-worker Python Scrapy daemon cluster containerized in Docker.
+  * Redis in-memory cache running SHA-256 URL and content hashing for duplicate avoidance before request dispatch.
+  * Sliding-window rate limiter per target domain to maintain strict request intervals.
+  * Parsed JSON records are published to a RabbitMQ topic exchange with durable queues and dead-letter exchanges (DLX) to decouple scraping throughput from database write limits.
+  * Clean records ingested into PostgreSQL for time-series analytics.
+* **Throughput:** ~10,000+ extracted pages per minute across parallel worker containers.
+* **Stack:** Python, Scrapy, Redis, RabbitMQ, PostgreSQL, Docker.
+
+#### 4. Multi-Agent Development Tooling
+*Internal Engineering Acceleration Suite at EnxtAI*
+
+* **Architecture:** 
+  * Utilizes Google Stitch for UI layout synthesis and structural scaffolding.
+  * Antigravity runtime for autonomous multi-step planning loops, tool execution, and workspace verification.
+  * Hermes messaging protocol for asynchronous communication between specialized agents.
+  * Automated testing, linting, and Docker container builds managed through GitHub Actions workflows.
+* **Stack:** Python, Google Stitch, Antigravity, Hermes, GitHub Actions, Docker.
 
 ---
 
-### 📊 3D Contribution Calendar
+### Technical Stack & Implementation Context
+
+| Domain | Primary Technologies | Production Implementation Details |
+| :--- | :--- | :--- |
+| **Languages** | Python, TypeScript, JavaScript, SQL | Async scraping daemons, data analysis, REST APIs, frontend components. |
+| **Machine Learning** | TensorFlow, Deep Learning, OpenCV | Valuation modeling, precedent transaction analysis, computer vision coursework. |
+| **Distributed / Backend** | Redis, RabbitMQ, Node.js, Express, FastAPI | SHA-256 deduplication cache, sliding-window rate limiters, durable message broker queues. |
+| **Databases** | PostgreSQL, MongoDB | Partitioned time-series equity records in Postgres; patient conversation states in MongoDB. |
+| **APIs & Protocols** | Meta WhatsApp Business API, Webhooks, REST | HMAC-SHA256 signature verification, asynchronous webhook routing, payload normalization. |
+| **Frontend** | React, Next.js, CSS | Responsive trading interface for UnlistedStox, analytics charts, documentation. |
+| **DevOps & Infrastructure** | Docker, GitHub Actions, Linux | Worker daemon containerization, automated testing workflows, deployment scripts. |
+
+---
+
+### Career & Academic Background
+
+* **AI Engineer & Full-Stack Developer** — **EnxtAI** *(2024 – Present)*  
+  Noida, India. Lead backend and AI system development for UnlistedStox, hospital automation webhooks, and distributed data harvesting clusters.
+* **Research & Data Analysis Intern** — **Flukesys Global** *(2023)*  
+  Structured dataset processing and validation for internal experimental tooling.
+* **B.Tech in Computer Science & Engineering (AI & Machine Learning)** — **Amity University, Noida** *(2021 – 2025)*  
+  Coursework in Neural Networks, Deep Learning, Computer Vision, Distributed Computing, Data Structures, and Database Management Systems.
+
+---
+
+### Contributions
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season.svg" />
-    <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Calendar" width="100%"/>
+    <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Calendar" width="100%" />
   </picture>
 </div>
 
----
-
-### 📈 GitHub Analytics
+<br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=porasnagar&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0d14&title_color=38bdf8&icon_color=818cf8&text_color=94a3b8" height="165" />
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=porasnagar&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0d14&title_color=38bdf8&text_color=94a3b8&langs_count=6" height="165" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=porasnagar&theme=tokyonight&hide_border=true&background=0a0d14&stroke=1e293b&ring=38bdf8&fire=38bdf8&currStreakLabel=94a3b8&dates=64748b" height="145" />
-</div>
-
----
-
-<div align="center">
-  <a href="https://porasnagar.github.io">
-    <img src="https://img.shields.io/badge/VISIT_FULL_INTERACTIVE_PORTFOLIO-porasnagar.github.io-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit Interactive Portfolio" />
-  </a>
-  <br/><br/>
-  <sub>B.Tech in Computer Science & Engineering (AI & ML) · Amity University, Noida (2021–2025)</sub><br/>
-  <sub>Open to AI Engineer, Distributed Systems, and Full-Stack roles · Noida / Hybrid / Remote</sub>
+  <sub>Poras Nagar · AI Engineer @ EnxtAI · Noida, Uttar Pradesh, India</sub><br/>
+  <sub>Email: <a href="mailto:poras9868@gmail.com">poras9868@gmail.com</a> · Website: <a href="https://porasnagar.github.io">porasnagar.github.io</a></sub>
 </div>
