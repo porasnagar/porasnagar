@@ -1,289 +1,286 @@
+<!--
+  ══════════════════════════════════════════════════════════════
+  porasnagar/porasnagar — profile README
+  Every place you need to change something is marked  ✎
+  Nothing here needs CSS: all styling lives inside assets/*.svg
+  ══════════════════════════════════════════════════════════════
+-->
+
+<!-- ✎ HERO — edit the text inside assets/hero.svg AND assets/hero-light.svg -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/hero.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+  <img src="assets/hero.svg" alt="Poras Nagar — AI Engineer, Distributed Systems, Full-Stack Developer" width="100%">
+</picture>
+
+<!-- ─────────────────────────── NAV ─────────────────────────── -->
 <div align="center">
 
-<!-- WEBSITE HERO HEADER -->
-<a href="https://porasnagar.github.io">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,35&height=220&section=header&text=Poras%20Nagar&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=AI%20Engineer%20%E2%80%A2%20Distributed%20Systems%20%E2%80%A2%20Full-Stack%20Developer&descFontSize=18&descAlignY=58&descAlign=50" width="100%" alt="Poras Nagar Header" />
-</a>
+<a href="#systems"><img src="https://img.shields.io/badge/Systems-161b22?style=for-the-badge&labelColor=0d1117&logo=rocket&logoColor=7c5cff" alt="Systems"></a>
+<a href="#stack"><img src="https://img.shields.io/badge/Stack-161b22?style=for-the-badge&labelColor=0d1117&logo=stackblitz&logoColor=22d3ee" alt="Stack"></a>
+<a href="#signals"><img src="https://img.shields.io/badge/Signals-161b22?style=for-the-badge&labelColor=0d1117&logo=githubactions&logoColor=f59e0b" alt="Signals"></a>
+<a href="#contact"><img src="https://img.shields.io/badge/Contact-161b22?style=for-the-badge&labelColor=0d1117&logo=maildotru&logoColor=e6edf3" alt="Contact"></a>
 
-<!-- WEBSITE NAVIGATION BAR -->
-<p align="center">
-  <a href="#-featured-systems"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20Featured%20Systems-161b22?style=for-the-badge&logoColor=white" alt="Systems" /></a>
-  <a href="#-tech-arsenal"><img src="https://img.shields.io/badge/%F0%9F%9B%A0%EF%B8%8F%20Tech%20Arsenal-161b22?style=for-the-badge&logoColor=white" alt="Tech Stack" /></a>
-  <a href="#-3d-contribution-calendar"><img src="https://img.shields.io/badge/%F0%9F%8C%90%203D%20Calendar-161b22?style=for-the-badge&logoColor=white" alt="3D Calendar" /></a>
-  <a href="#-contribution-snake"><img src="https://img.shields.io/badge/%F0%9F%90%8D%20Snake%20Activity-161b22?style=for-the-badge&logoColor=white" alt="Snake" /></a>
-  <a href="#-connect"><img src="https://img.shields.io/badge/%F0%9F%93%AC%20Contact-161b22?style=for-the-badge&logoColor=white" alt="Contact" /></a>
-</p>
-
-<!-- ACTION BADGES -->
-<p align="center">
-  <a href="https://porasnagar.github.io" target="_blank">
-    <img src="https://img.shields.io/badge/LIVE_WEBSITE-porasnagar.github.io-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Website" />
-  </a>
-  <a href="https://unlistedstox.com" target="_blank">
-    <img src="https://img.shields.io/badge/FLAGSHIP_PLATFORM-unlistedstox.com-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="UnlistedStox" />
-  </a>
-  <a href="https://linkedin.com/in/poras-nagar-036886189" target="_blank">
-    <img src="https://img.shields.io/badge/LINKEDIN-in%2Fporas--nagar-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:poras9868@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-poras9868%40gmail.com-10b981?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=porasnagar&style=for-the-badge&color=8b5cf6&label=PROFILE+VIEWS" alt="Profile Views" />
-</p>
+<!-- ✎ your three real links -->
+<a href="https://porasnagar.github.io"><img src="https://img.shields.io/badge/Portfolio-porasnagar.github.io-7c5cff?style=for-the-badge&labelColor=0d1117&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
+<a href="https://unlistedstox.com"><img src="https://img.shields.io/badge/Live_product-UnlistedStox-22d3ee?style=for-the-badge&labelColor=0d1117&logo=tradingview&logoColor=white" alt="UnlistedStox"></a>
+<a href="https://linkedin.com/in/poras-nagar-036886189"><img src="https://img.shields.io/badge/LinkedIn-in%2Fporas--nagar-0A66C2?style=for-the-badge&labelColor=0d1117&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt="">
 
-### 💻 Developer Terminal
+<!-- ─────────────────────────── ABOUT ─────────────────────────── -->
 
-```python
-class PorasNagar:
-    def __init__(self):
-        self.name       = "Poras Nagar"
-        self.role       = "AI Engineer & Full-Stack Developer"
-        self.company    = "EnxtAI"
-        self.location   = "Noida, India 🇮🇳 (UTC+5:30)"
-        self.education  = "B.Tech CSE (Hons. AI & ML) — Amity University (2021–2025)"
-        
-        self.focus_areas = [
-            "Algorithmic Trading & Valuation Engines",
-            "Meta WhatsApp Cloud API Healthcare Automation",
-            "Distributed Scrapers (10,000+ pages/min on Scrapy + Redis + RabbitMQ)",
-            "Autonomous Multi-Agent Tooling (Google Stitch, Antigravity, Hermes)"
-        ]
+I build the unglamorous half of AI products: the pricing engines, the queue
+workers, the schemas that stop a scraper from lying to a trading screen.
+Most of my work lives in Indian pre-IPO and unlisted equity markets, where the
+data is messy, thinly traded, and nobody else has cleaned it up yet.
 
-    def status(self):
-        return "Actively engineering production AI systems @ EnxtAI 🚀"
+<!-- ✎ swap any of these values -->
+```yaml
+operator:   Poras Nagar
+role:       Full-Stack Developer & Product Manager  # @ EnxtAI / SMC Global Securities
+domain:     fintech · unlisted & pre-IPO equities
+education:  B.Tech CSE (Hons. AI & ML), Amity University — 2021→2025
+timezone:   Asia/Kolkata (UTC+5:30)
 
-poras = PorasNagar()
-print(poras.status())
+currently:
+  - shipping valuation + cap-table pipelines on UnlistedStox
+  - leading a team of interns across four internal platforms
+  - building Hermes, an agent that writes documents so I don't have to
+
+open_to:  [ AI engineering, applied AI, backend-heavy full-stack ]
 ```
 
----
+<img src="assets/divider.svg" width="100%" alt="">
 
-<div id="-featured-systems"></div>
+<!-- ─────────────────────────── SYSTEMS ─────────────────────────── -->
+<a name="systems"></a>
+<h3 align="center">Systems in production</h3>
+<p align="center"><sub>Four things I'd be happy to be interviewed about line by line.</sub></p>
 
-### 🚀 Featured Production Systems
-
+<!-- ✎ replace cards freely — keep the 2×2 shape, it reads best on mobile -->
 <table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3>📈 <a href="https://unlistedstox.com">UnlistedStox.com</a></h3>
-      <p><img src="https://img.shields.io/badge/STATUS-LIVE_IN_PRODUCTION-success?style=flat-square" alt="Status" /> <img src="https://img.shields.io/badge/DOMAIN-FINTECH-blue?style=flat-square" alt="Domain" /></p>
-      <p><strong>OTC Equity Pricing &amp; Valuation Platform:</strong> Automated pricing engine calculating real-time valuations for unlisted Indian shares from historical transactions, debt-to-equity metrics, and statutory cap-table filings.</p>
-      <ul>
-        <li>Python &amp; TensorFlow valuation regression workers.</li>
-        <li>PostgreSQL indexed B-tree time-series tables with &lt;15ms query latencies.</li>
-        <li>React trading interface rendering live bid/ask market depth.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
-        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
-      </p>
-      <p><a href="https://unlistedstox.com" target="_blank"><strong>Launch Platform ↗</strong></a></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🏥 Hospital Management WhatsApp AI</h3>
-      <p><img src="https://img.shields.io/badge/INTEGRATION-META_CLOUD_API-25D366?style=flat-square&logo=whatsapp&logoColor=white" alt="WhatsApp" /> <img src="https://img.shields.io/badge/TYPE-TRIAGE_BOT-purple?style=flat-square" alt="Triage" /></p>
-      <p><strong>Healthcare Triage &amp; Appointment Engine:</strong> WhatsApp-native hospital communication service. Automates doctor slot reservation, patient record intake, and automated diagnostic report delivery.</p>
-      <ul>
-        <li>Express.js webhook listener verifying HMAC-SHA256 signatures with &lt;200ms acknowledgement SLA.</li>
-        <li>Asynchronous dispatcher managing multi-turn conversation states in MongoDB.</li>
-        <li>Automated dispatch of encrypted pathology report URLs directly in WhatsApp.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Meta_WhatsApp_API-25D366?style=flat-square&logo=whatsapp&logoColor=white" />
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
-        <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />
-        <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🕷️ Intelligent Market Scrapers &amp; Queue Broker</h3>
-      <p><img src="https://img.shields.io/badge/THROUGHPUT-10%2C000%2B_PAGES%2FMIN-FF6600?style=flat-square" alt="Throughput" /> <img src="https://img.shields.io/badge/QUEUE-REDIS_%2B_RABBITMQ-DC382D?style=flat-square" alt="Queue" /></p>
-      <p><strong>High-Throughput Data Harvesting Cluster:</strong> Distributed extraction cluster gathering OTC equity valuations, filings, and registrar updates across dozens of target portals.</p>
-      <ul>
-        <li>Dockerized Python Scrapy daemon worker cluster.</li>
-        <li>Redis SHA-256 fingerprint deduplication &amp; sliding-window rate limiters.</li>
-        <li>RabbitMQ topic exchange with dead-letter queue (DLX) decoupling scraping spikes from database writes.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Scrapy-EE3729?style=flat-square&logo=scrapy&logoColor=white" />
-        <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
-        <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker-2CA5E0?style=flat-square&logo=docker&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🤖 Multi-Agent Intelligence Suite</h3>
-      <p><img src="https://img.shields.io/badge/INTERNAL_STACK-ENXTAI_AI_OPS-8A2BE2?style=flat-square" alt="EnxtAI" /> <img src="https://img.shields.io/badge/CI%2FCD-GITHUB_ACTIONS-2088FF?style=flat-square" alt="CI/CD" /></p>
-      <p><strong>Autonomous Engineering Acceleration Platform:</strong> Internal agentic tooling deployed across EnxtAI repositories.</p>
-      <ul>
-        <li>Google Stitch for rapid UI synthesis and component prototyping.</li>
-        <li>Antigravity runtime for autonomous planning loops and automated tool execution.</li>
-        <li>Hermes messaging protocol for inter-agent IPC.</li>
-        <li>GitHub Actions automated CI/CD linting, test suites, and Docker container builds.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Google_Stitch-4285F4?style=flat-square&logo=google&logoColor=white" />
-        <img src="https://img.shields.io/badge/Antigravity-8A2BE2?style=flat-square" />
-        <img src="https://img.shields.io/badge/Hermes-FFB703?style=flat-square" />
-        <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
-      </p>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top">
+
+<h4>UnlistedStox</h4>
+<img src="https://img.shields.io/badge/live-in_production-22d3ee?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/domain-fintech-7c5cff?style=flat-square&labelColor=0d1117" alt="">
+
+<p>An OTC equity pricing and valuation platform. It turns historical
+transactions, debt-to-equity metrics and statutory cap-table filings into
+a live price for shares that never touch an exchange.</p>
+
+<ul>
+<li>Regression workers in Python/TensorFlow re-price on every new filing</li>
+<li>B-tree indexed time-series in Postgres, sub-15&nbsp;ms reads</li>
+<li>React order book rendering live bid/ask depth</li>
+</ul>
+
+<sub><code>Python</code> · <code>TensorFlow</code> · <code>React</code> · <code>Node</code> · <code>PostgreSQL</code></sub><br><br>
+<a href="https://unlistedstox.com"><b>Open the platform →</b></a>
+
+</td>
+<td width="50%" valign="top">
+
+<h4>Hospital triage over WhatsApp</h4>
+<img src="https://img.shields.io/badge/channel-Meta_Cloud_API-25D366?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/type-triage_bot-f59e0b?style=flat-square&labelColor=0d1117" alt="">
+
+<p>Patients book slots, submit intake and receive pathology reports without
+leaving WhatsApp — no app install, which is the whole point in a tier-2
+hospital's catchment area.</p>
+
+<ul>
+<li>Express webhook verifying HMAC-SHA256 inside a 200&nbsp;ms ack window</li>
+<li>Async dispatcher holding multi-turn conversation state in MongoDB</li>
+<li>Encrypted, expiring report URLs delivered in-thread</li>
+</ul>
+
+<sub><code>Meta WhatsApp API</code> · <code>Node</code> · <code>Express</code> · <code>MongoDB</code></sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h4>Market scrapers &amp; queue broker</h4>
+<img src="https://img.shields.io/badge/throughput-10k%2B_pages%2Fmin-7c5cff?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/queue-Redis_%2B_RabbitMQ-FF6600?style=flat-square&labelColor=0d1117" alt="">
+
+<p>The ingestion layer everything else sits on. A distributed extraction
+cluster that pulls OTC valuations, filings and registrar data, then
+normalises it into one schema before anything downstream sees it.</p>
+
+<ul>
+<li>Back-pressured fan-out with per-source rate budgets</li>
+<li>Dead-letter replay so a bad parse never loses a day of data</li>
+<li>Schema contracts enforced at the queue boundary, not in the consumer</li>
+</ul>
+
+<sub><code>Python</code> · <code>RabbitMQ</code> · <code>Redis</code> · <code>Docker</code></sub>
+
+</td>
+<td width="50%" valign="top">
+
+<h4>Multi-agent internal tooling</h4>
+<img src="https://img.shields.io/badge/scope-internal_platform-22d3ee?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=flat-square&labelColor=0d1117" alt="">
+
+<p>Agentic tooling deployed across our repos: it drafts documents, generates
+decks and spreadsheets, and takes the repetitive half of engineering
+paperwork off the team's plate.</p>
+
+<ul>
+<li>Deterministic document pipeline — templates in, DOCX/PPTX/XLSX out</li>
+<li>Runs in CI, so artifacts are versioned alongside the code</li>
+<li>Tool-calling layer shared across four internal platforms</li>
+</ul>
+
+<sub><code>Python</code> · <code>FastAPI</code> · <code>GitHub Actions</code></sub>
+
+</td>
+</tr>
 </table>
 
----
+<img src="assets/divider.svg" width="100%" alt="">
 
-<div id="-tech-arsenal"></div>
-
-### 🛠️ Tech Arsenal
+<!-- ─────────────────────────── STACK ─────────────────────────── -->
+<a name="stack"></a>
+<h3 align="center">Stack</h3>
+<p align="center"><sub>Grouped by what I reach for, not by what I've read about.</sub></p>
 
 <div align="center">
 
-#### 🤖 AI & Machine Learning
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-
-#### 🔧 Backend & Distributed Pipelines
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST_APIs-0284C7?style=for-the-badge&logo=postman&logoColor=white)
-![Meta WhatsApp API](https://img.shields.io/badge/Meta_WhatsApp_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
-
-#### ⚛️ Frontend Engineering
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-#### 🗄️ Databases & Storage
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-
-#### ⚡ DevOps & Cloud Infrastructure
-![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+<!-- ✎ the daily-drivers row stays open; everything else is collapsed -->
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0d1117" alt="">
 
 </div>
 
----
+<details>
+<summary><b>&nbsp;Everything else, by layer</b></summary>
+<br>
+<div align="center">
 
-### 📊 GitHub Activity & Metrics
+<table width="100%">
+<tr>
+<td align="right" width="26%"><sub><b>AI / ML</b></sub></td>
+<td>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white&labelColor=0d1117" alt="">
+</td>
+</tr>
+<tr>
+<td align="right"><sub><b>Backend &amp; pipelines</b></sub></td>
+<td>
+<img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/WhatsApp_Cloud_API-25D366?style=flat-square&logo=whatsapp&logoColor=white&labelColor=0d1117" alt="">
+</td>
+</tr>
+<tr>
+<td align="right"><sub><b>Frontend</b></sub></td>
+<td>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white&labelColor=0d1117" alt="">
+</td>
+</tr>
+<tr>
+<td align="right"><sub><b>Data</b></sub></td>
+<td>
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white&labelColor=0d1117" alt="">
+</td>
+</tr>
+<tr>
+<td align="right"><sub><b>Infra</b></sub></td>
+<td>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white&labelColor=0d1117" alt="">
+</td>
+</tr>
+</table>
+
+</div>
+</details>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+<!-- ─────────────────────────── SIGNALS ─────────────────────────── -->
+<a name="signals"></a>
+<h3 align="center">Signals</h3>
 
 <div align="center">
-  <table width="100%">
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=porasnagar&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0d14&title_color=38bdf8&icon_color=818cf8&text_color=94a3b8" width="100%" alt="GitHub Stats" />
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=porasnagar&theme=tokyonight&hide_border=true&background=0a0d14&stroke=1e293b&ring=38bdf8&fire=38bdf8&currStreakLabel=94a3b8&dates=64748b" width="100%" alt="Streak Stats" />
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=porasnagar&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0d14&title_color=38bdf8&text_color=94a3b8&langs_count=8" width="100%" alt="Top Languages" />
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=porasnagar&theme=tokyo-night&bg_color=0a0d14&color=38bdf8&line=818cf8&point=38bdf8&area=true&hide_border=true" width="100%" alt="Activity Graph" />
-      </td>
-    </tr>
-  </table>
+
+<!-- ✎ change username= in all four URLs -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api?username=porasnagar&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=00000000&title_color=7c5cff&icon_color=22d3ee&text_color=8b98ab&ring_color=f59e0b">
+  <img src="https://github-readme-stats.vercel.app/api?username=porasnagar&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=00000000&title_color=6d28d9&icon_color=0891b2&text_color=4a5565&ring_color=b45309" height="165" alt="GitHub stats">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=porasnagar&layout=compact&hide_border=true&langs_count=8&bg_color=00000000&title_color=7c5cff&text_color=8b98ab">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=porasnagar&layout=compact&hide_border=true&langs_count=8&bg_color=00000000&title_color=6d28d9&text_color=4a5565" height="165" alt="Top languages">
+</picture>
+
 </div>
 
----
+<details open>
+<summary><b>&nbsp;Contribution calendar, in 3D</b></summary>
+<br>
+<!-- generated nightly by .github/workflows/profile-assets.yml -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="profile-3d-contrib/profile-night-rainbow.svg">
+  <img src="profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D contribution calendar">
+</picture>
+</details>
 
-### 🏆 GitHub Trophies
+<details>
+<summary><b>&nbsp;The snake eats the graph</b></summary>
+<br>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/porasnagar/porasnagar/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/porasnagar/porasnagar/output/github-snake.svg">
+  <img src="https://raw.githubusercontent.com/porasnagar/porasnagar/output/github-snake.svg" width="100%" alt="Contribution snake">
+</picture>
+</details>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=porasnagar&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
-</div>
+<img src="assets/divider.svg" width="100%" alt="">
 
----
-
-<div id="-3d-contribution-calendar"></div>
-
-### 🌐 3D Contribution Calendar
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="./profile-3d-contrib/profile-night-rainbow.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-gitblock.svg" />
-    <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Calendar" width="100%" />
-  </picture>
-</div>
-
----
-
-<div id="-contribution-snake"></div>
-
-### 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/porasnagar/porasnagar/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/porasnagar/porasnagar/output/github-contribution-grid-snake.svg" />
-    <img src="https://raw.githubusercontent.com/porasnagar/porasnagar/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake Animation" width="100%" />
-  </picture>
-</div>
-
----
-
-<div id="-connect"></div>
-
-### 📬 Connect With Me
-
-<div align="center">
+<!-- ─────────────────────────── CONTACT ─────────────────────────── -->
+<a name="contact"></a>
+<h3 align="center">Say hello</h3>
 
 <p align="center">
-  <a href="mailto:poras9868@gmail.com">
-    <img src="https://img.shields.io/badge/Email-poras9868%40gmail.com-10b981?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://linkedin.com/in/poras-nagar-036886189" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-in%2Fporas--nagar-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://unlistedstox.com" target="_blank">
-    <img src="https://img.shields.io/badge/UnlistedStox-Live_FinTech-0ea5e9?style=for-the-badge&logo=safari&logoColor=white" alt="UnlistedStox" />
-  </a>
-  <a href="https://porasnagar.github.io" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-porasnagar.github.io-6366f1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-  </a>
+Fastest way to reach me is email. I read everything; I answer anything
+with a concrete question in it.
 </p>
 
-<br/>
+<div align="center">
 
-<sub>B.Tech in Computer Science &amp; Engineering (Hons. AI &amp; ML) · Amity University, Noida (2021–2025)</sub><br/>
-<sub>AI Engineer @ EnxtAI · Open to AI Engineer &amp; Full-Stack roles globally</sub>
+<!-- ✎ your handles -->
+<a href="mailto:poras9868@gmail.com"><img src="https://img.shields.io/badge/poras9868@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"></a>
+<a href="https://linkedin.com/in/poras-nagar-036886189"><img src="https://img.shields.io/badge/poras--nagar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"></a>
+<a href="https://porasnagar.github.io"><img src="https://img.shields.io/badge/porasnagar.github.io-7c5cff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0d1117" alt="Portfolio"></a>
 
-<br/><br/>
-
-<a href="https://porasnagar.github.io">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24,35&height=100&section=footer" width="100%" alt="Footer" />
-</a>
+<br><br>
+<sub>Hero and dividers are hand-written SVG in <a href="assets/"><code>assets/</code></a> — no template, no generator.</sub>
 
 </div>
