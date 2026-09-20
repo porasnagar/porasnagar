@@ -18,7 +18,7 @@
   <g clip-path="url(#crt_tk_clip)">
     <g filter="url(#crt_tk_glow)" class="scroll-crt">
       <text class="crt-tk" x="0" y="22">
-        &gt;&gt;&gt; [OTC_VALUATION]: STREAMING BID/ASK DEPTH &gt;&gt;&gt; [SCRAPER_QUEUE]: 0 DROPPED RECORDS &gt;&gt;&gt; [TRIAGE_DISPATCH]: MONGO_SESSION_LOCKED &gt;&gt;&gt; [HERMES_CI]: DOCX/PPTX SYNTHESIS OK &gt;&gt;&gt; [COMMITS]: VERIFIED &gt;&gt;&gt; [STATUS]: READY FOR GLOBAL ROLES &gt;&gt;&gt;
+        &gt;&gt;&gt; [OPERATOR]: PORAS NAGAR &gt;&gt;&gt; [LUMAVOICE]: COMPUTER VISION INFERENCE STREAMING &gt;&gt;&gt; [SCRAPER_QUEUE]: 10,480 PG/MIN OK &gt;&gt;&gt; [TRIAGE_DISPATCH]: HMAC-SHA256 VERIFIED &gt;&gt;&gt; [HERMES_CI]: MULTI-AGENT PIPELINE NOMINAL &gt;&gt;&gt; [STATUS]: READY FOR INTERVIEWS &gt;&gt;&gt;
       </text>
     </g>
   </g>

@@ -1,4 +1,8 @@
-<!--
+import os
+
+README_PATH = r"C:\Users\poras\.gemini\antigravity-ide\scratch\porasnagar-profile-repo\README.md"
+
+readme_content = """<!--
   ══════════════════════════════════════════════════════════════
   porasnagar/porasnagar — Dual Retro OS Profile Experience
   Microsoft Windows 98 Light Mode & 90s Phosphor CRT Dark Terminal
@@ -62,7 +66,7 @@ clusters, computer vision phoneme classifiers, and webhook servers that handle
 strict sub-200ms acknowledgement windows.
 
 ```diff
-C:\PORAS> type status.sys
+C:\\PORAS> type status.sys
 + OPERATOR    : Poras Nagar
 + ROLE        : Full-Stack AI Engineer & Distributed Systems Developer
 + DEGREE      : B.Tech CSE (Hons. AI & ML) — Amity University [2021-2025]
@@ -72,8 +76,8 @@ C:\PORAS> type status.sys
 ```
 
 ```dos
-C:\PORAS> tree /f
-C:\PORAS
+C:\\PORAS> tree /f
+C:\\PORAS
 ├── APPS
 │   ├── LUMAVOICE.EXE       [Hindi Lip-Reading Computer Vision Model]
 │   ├── TRIAGE_GATEWAY.SYS   [Hospital WhatsApp Meta Cloud API Webhook]
@@ -412,3 +416,9 @@ paperwork off the team's plate.</p>
 <sub>Dual Retro OS Architecture (Microsoft Windows 98 Light Mode &amp; 90s Phosphor CRT Dark Mode) • Hand-crafted SVG Design System • Auto-updated via GitHub Actions CI.</sub>
 
 </div>
+"""
+
+with open(README_PATH, "w", encoding="utf-8") as f:
+    f.write(readme_content.strip() + "\n")
+
+print(f"README.md successfully updated! Total length: {len(readme_content)} chars")

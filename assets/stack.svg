@@ -22,7 +22,7 @@
     <text class="crt" x="0" y="44" font-weight="bold">PID   USER     PR  NI  VIRT   RES   SHR S %CPU %MEM   TIME+  COMMAND</text>
     <text class="dim" x="0" y="58">─────────────────────────────────────────────────────────────────────────────────────────────</text>
     
-    <text class="crt" x="0" y="78">101   poras    20   0  14.2M  8.4M  2.1M S  44.2 12.4  142:01  python3 -m uvicorn.api.unlistedstox</text>
+    <text class="crt" x="0" y="78">101   poras    20   0  14.2M  8.4M  2.1M S  44.2 12.4  142:01  python3 -m lumavoice.vision.inference</text>
     <text class="crt" x="0" y="98">102   poras    20   0  18.6M 11.2M  3.4M S  31.8 15.2   88:14  node --max-old-space=4096 triage.js</text>
     <text class="crt" x="0" y="118">103   poras    20   0  22.1M 14.8M  4.2M S  14.5 18.0  210:45  celery -A scraper_cluster worker -l info</text>
     <text class="crt" x="0" y="138">104   poras    20   0  32.4M 24.1M  8.5M S   8.2 22.4   44:20  python3 hermes_agentic_pipeline.py</text>

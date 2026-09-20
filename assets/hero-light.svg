@@ -13,53 +13,34 @@
   <style>
     .w98-font { font-family: "MS Sans Serif", Tahoma, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .mono { font-family: ui-monospace, "Courier New", monospace; }
-    .blink { animation: cursorBlink 1s step-end infinite; }
-    @keyframes cursorBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
   </style>
 
   <g clip-path="url(#frame)">
-    <!-- Desktop Background (Classic Win98 Teal) -->
     <rect width="1200" height="370" fill="#008080"/>
     <rect width="1200" height="370" fill="url(#scanlines)"/>
 
-    <!-- Main Window Outer Frame (Classic Bevel) -->
+    <!-- Main Window Outer Frame -->
     <g transform="translate(20, 16)">
-      <!-- Outer drop shadow/black border -->
       <rect width="1160" height="338" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
-      <!-- Top/Left White Bevel Highlight -->
       <line x1="1" y1="1" x2="1159" y2="1" stroke="#ffffff" stroke-width="2"/>
       <line x1="1" y1="1" x2="1" y2="337" stroke="#ffffff" stroke-width="2"/>
-      <!-- Bottom/Right Dark Grey Shadow -->
       <line x1="2" y1="336" x2="1158" y2="336" stroke="#808080" stroke-width="2"/>
       <line x1="1158" y1="2" x2="1158" y2="336" stroke="#808080" stroke-width="2"/>
 
       <!-- Title Bar -->
       <g transform="translate(4, 4)">
         <rect width="1152" height="24" fill="url(#w98title)"/>
-        <!-- 16x16 Pixel Icon Placeholder -->
         <rect x="5" y="4" width="16" height="16" fill="#ffff00" stroke="#000000" stroke-width="1"/>
         <rect x="8" y="7" width="10" height="10" fill="#000080"/>
-        <text class="w98-font" x="27" y="17" font-size="12" font-weight="bold" fill="#ffffff" letter-spacing="0.02em">C:\PORAS\PROFILE.EXE - [Poras Nagar: AI Engineer &amp; Distributed Systems]</text>
+        <text class="w98-font" x="27" y="17" font-size="12" font-weight="bold" fill="#ffffff" letter-spacing="0.02em">C:\PORAS\PROFILE.EXE - [Poras Nagar: AI Engineer &amp; Distributed Systems Builder]</text>
         
-        <!-- Win98 Buttons [_] [?] [X] -->
         <g transform="translate(1088, 3)">
-          <!-- Minimize -->
           <rect x="0" y="0" width="18" height="18" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
-          <line x1="1" y1="1" x2="17" y2="1" stroke="#ffffff"/>
-          <line x1="1" y1="1" x2="1" y2="17" stroke="#ffffff"/>
-          <line x1="4" y1="13" x2="12" y2="13" stroke="#000000" stroke-width="2"/>
-
-          <!-- Maximize -->
+          <line x1="1" y1="1" x2="17" y2="1" stroke="#ffffff"/><line x1="4" y1="13" x2="12" y2="13" stroke="#000000" stroke-width="2"/>
           <rect x="20" y="0" width="18" height="18" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
-          <line x1="21" y1="1" x2="37" y2="1" stroke="#ffffff"/>
-          <line x1="21" y1="1" x2="21" y2="17" stroke="#ffffff"/>
-          <rect x="24" y="4" width="10" height="9" fill="none" stroke="#000000" stroke-width="2"/>
-
-          <!-- Close -->
+          <line x1="21" y1="1" x2="37" y2="1" stroke="#ffffff"/><rect x="24" y="4" width="10" height="9" fill="none" stroke="#000000" stroke-width="2"/>
           <rect x="40" y="0" width="18" height="18" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
-          <line x1="41" y1="1" x2="57" y2="1" stroke="#ffffff"/>
-          <line x1="41" y1="1" x2="41" y2="17" stroke="#ffffff"/>
-          <path d="M44 4 L53 13 M53 4 L44 13" stroke="#000000" stroke-width="2"/>
+          <line x1="41" y1="1" x2="57" y2="1" stroke="#ffffff"/><path d="M44 4 L53 13 M53 4 L44 13" stroke="#000000" stroke-width="2"/>
         </g>
       </g>
 
@@ -79,8 +60,6 @@
         <rect width="1136" height="236" fill="#ffffff" stroke="#808080" stroke-width="1"/>
         <line x1="1" y1="1" x2="1135" y2="1" stroke="#404040" stroke-width="1"/>
         <line x1="1" y1="1" x2="1" y2="235" stroke="#404040" stroke-width="1"/>
-        <line x1="1" y1="235" x2="1135" y2="235" stroke="#ffffff" stroke-width="1"/>
-        <line x1="1135" y1="1" x2="1135" y2="235" stroke="#ffffff" stroke-width="1"/>
 
         <!-- Left Column: User Card & Bio -->
         <g transform="translate(24, 20)">
@@ -96,8 +75,8 @@
 
           <g transform="translate(92, 4)">
             <text class="w98-font" x="0" y="24" font-size="26" font-weight="bold" fill="#000080">Poras Nagar</text>
-            <text class="mono" x="0" y="46" font-size="13" font-weight="bold" fill="#008000">&gt; Full-Stack Developer &amp; AI Engineer @ EnxtAI</text>
-            <text class="w98-font" x="0" y="68" font-size="12" fill="#404040">Specializing in OTC equity pricing engines, queue brokers &amp; distributed valuation pipelines.</text>
+            <text class="mono" x="0" y="46" font-size="13" font-weight="bold" fill="#008000">&gt; AI Engineer &amp; Distributed Systems Developer</text>
+            <text class="w98-font" x="0" y="68" font-size="12" fill="#404040">Specializing in high-throughput scrapers, vision/audio models &amp; multi-agent autonomous CI tooling.</text>
           </g>
 
           <!-- Bio / Details Inset Box -->
@@ -109,59 +88,47 @@
             <text class="mono" x="16" y="24" font-size="11.5" fill="#000080">OPERATOR   : Poras Nagar</text>
             <text class="mono" x="16" y="44" font-size="11.5" fill="#000000">EDUCATION  : B.Tech CSE (Hons. AI &amp; ML), Amity University [2021-2025]</text>
             <text class="mono" x="16" y="64" font-size="11.5" fill="#000000">LOCATION   : Noida, India (UTC+5:30) • Open to Global AI &amp; Backend Roles</text>
-            <text class="mono" x="16" y="84" font-size="11.5" fill="#800000">CURRENTLY  : Shipping valuation pipelines on UnlistedStox &amp; Hermes Agent</text>
+            <text class="mono" x="16" y="84" font-size="11.5" fill="#800000">BUILDING   : LumaVoice (Lip-Reading AI), Scraper Clusters &amp; Hermes Agent</text>
           </g>
         </g>
 
         <!-- Right Column: System Resource Inset Box -->
         <g transform="translate(700, 20)">
           <rect width="410" height="182" fill="#c0c0c0" stroke="#808080" stroke-width="1"/>
-          <!-- 3D Sunken -->
           <line x1="0" y1="0" x2="409" y2="0" stroke="#404040" stroke-width="1"/>
           <line x1="0" y1="0" x2="0" y2="181" stroke="#404040" stroke-width="1"/>
-          <line x1="0" y1="181" x2="410" y2="181" stroke="#ffffff" stroke-width="1"/>
-          <line x1="409" y1="0" x2="409" y2="181" stroke="#ffffff" stroke-width="1"/>
 
           <rect x="8" y="6" width="394" height="20" fill="#000080"/>
-          <text class="w98-font" x="14" y="20" font-size="11" font-weight="bold" fill="#ffffff">SYSTEM HARDWARE &amp; RUNTIME STATUS</text>
+          <text class="w98-font" x="14" y="20" font-size="11" font-weight="bold" fill="#ffffff">SYSTEM ARCHITECTURE &amp; OPERATIONAL STATUS</text>
 
           <g transform="translate(16, 40)">
-            <text class="mono" x="0" y="12" font-size="11" fill="#000000">UnlistedStox B-Tree Reads :</text>
-            <text class="mono" x="220" y="12" font-size="11" font-weight="bold" fill="#000080">[SUB-15ms] OK</text>
+            <text class="mono" x="0" y="12" font-size="11" fill="#000000">LumaVoice Vision Inference :</text>
+            <text class="mono" x="220" y="12" font-size="11" font-weight="bold" fill="#000080">[30 FPS STREAM] OK</text>
 
-            <text class="mono" x="0" y="36" font-size="11" fill="#000000">Scraper Ingestion Rate    :</text>
+            <text class="mono" x="0" y="36" font-size="11" fill="#000000">Scraper Ingestion Rate     :</text>
             <text class="mono" x="220" y="36" font-size="11" font-weight="bold" fill="#008000">[10k+ pg/m] OK</text>
 
-            <text class="mono" x="0" y="60" font-size="11" fill="#000000">WhatsApp Webhook ACK Window:</text>
+            <text class="mono" x="0" y="60" font-size="11" fill="#000000">WhatsApp Webhook ACK Window :</text>
             <text class="mono" x="220" y="60" font-size="11" font-weight="bold" fill="#800080">[&lt; 200ms] OK</text>
 
-            <text class="mono" x="0" y="84" font-size="11" fill="#000000">Hermes Multi-Agent CI     :</text>
-            <text class="mono" x="220" y="84" font-size="11" font-weight="bold" fill="#000080">[ACTIVE] DOCS</text>
+            <text class="mono" x="0" y="84" font-size="11" fill="#000000">Hermes Multi-Agent CI      :</text>
+            <text class="mono" x="220" y="84" font-size="11" font-weight="bold" fill="#000080">[AUTONOMOUS] DOCS</text>
 
-            <text class="mono" x="0" y="108" font-size="11" fill="#000000">Memory Integrity Check    :</text>
-            <text class="mono" x="220" y="108" font-size="11" font-weight="bold" fill="#008000">[640K ALLOCATED]</text>
+            <text class="mono" x="0" y="108" font-size="11" fill="#000000">Availability For Hire      :</text>
+            <text class="mono" x="220" y="108" font-size="11" font-weight="bold" fill="#008000">[OPEN GLOBALLY]</text>
           </g>
         </g>
       </g>
 
-      <!-- Status Bar (Beveled Sunken Panels) -->
+      <!-- Status Bar -->
       <g transform="translate(12, 304)">
-        <!-- Panel 1 -->
         <rect x="0" y="0" width="460" height="22" fill="#c0c0c0" stroke="#808080" stroke-width="1"/>
-        <line x1="0" y1="21" x2="460" y2="21" stroke="#ffffff"/>
-        <line x1="459" y1="0" x2="459" y2="21" stroke="#ffffff"/>
         <text class="w98-font" x="8" y="15" font-size="11" fill="#000000">Ready</text>
 
-        <!-- Panel 2 -->
         <rect x="466" y="0" width="340" height="22" fill="#c0c0c0" stroke="#808080" stroke-width="1"/>
-        <line x1="466" y1="21" x2="806" y2="21" stroke="#ffffff"/>
-        <line x1="805" y1="0" x2="805" y2="21" stroke="#ffffff"/>
-        <text class="w98-font" x="474" y="15" font-size="11" fill="#000000">4 Platform(s) in Production</text>
+        <text class="w98-font" x="474" y="15" font-size="11" fill="#000000">4 Architecture Engines in Production</text>
 
-        <!-- Panel 3 -->
         <rect x="812" y="0" width="324" height="22" fill="#c0c0c0" stroke="#808080" stroke-width="1"/>
-        <line x1="812" y1="21" x2="1136" y2="21" stroke="#ffffff"/>
-        <line x1="1135" y1="0" x2="1135" y2="21" stroke="#ffffff"/>
         <text class="w98-font" x="820" y="15" font-size="11" fill="#000080">● MS-DOS Prompt Connected (COM1)</text>
       </g>
     </g>

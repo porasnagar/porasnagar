@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 148" width="1200" height="148" role="img" aria-label="CRT Audio Streamer">
+  <defs>
+    <radialGradient id="playerVignette" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0a180a" stop-opacity="0.1"/>
+      <stop offset="90%" stop-color="#050a05" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#010301" stop-opacity="0.95"/>
+    </radialGradient>
+    <filter id="pGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .crt { font-family: ui-monospace, "Courier New", monospace; font-size: 11.5px; fill: #00ff66; }
+    .amber { font-family: ui-monospace, "Courier New", monospace; font-size: 11px; fill: #ffb000; }
+    .dim { font-family: ui-monospace, "Courier New", monospace; font-size: 10.5px; fill: #1d7734; }
+    .p-eq1 { animation: pEq 0.7s ease-in-out infinite alternate; transform-origin: bottom; }
+    .p-eq2 { animation: pEq 0.9s ease-in-out infinite alternate-reverse; transform-origin: bottom; }
+    .p-eq3 { animation: pEq 0.5s ease-in-out infinite alternate; transform-origin: bottom; }
+    .p-eq4 { animation: pEq 1.1s ease-in-out infinite alternate-reverse; transform-origin: bottom; }
+    @keyframes pEq { 0% { transform: scaleY(0.2); } 100% { transform: scaleY(0.85); } }
+  </style>
+
+  <rect width="1200" height="148" rx="6" fill="#141714" stroke="#252b25" stroke-width="2"/>
+  <rect x="6" y="6" width="1188" height="136" rx="4" fill="#050a05"/>
+  <rect x="6" y="6" width="1188" height="136" fill="url(#playerVignette)"/>
+
+  <g filter="url(#pGlow)" transform="translate(24, 28)">
+    <text class="dim" x="0" y="0">&#x250C;&#x2500;&#x2500;[ SYNTHESIZER / AUDIO DAEMON: /dev/dsp0 (PCM 44.1kHz) ]&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;</text>
+    
+    <text class="crt" x="18" y="24">&#x25B6; STREAM: [LUMAVOICE_ACOUSTIC_SYNTHESIS.MOD] - 4 CHANNELS / AMIGA TRACKER FORMAT</text>
+    <text class="amber" x="18" y="44">BITRATE: 320 KBPS | BUFFER: 1024 FRAMES (0 UNDERFLOWS) | STATUS: STREAMING NOMINAL</text>
+    <text class="dim" x="18" y="64">QUEUE: [1] LumaVoice Vision  [2] Triage Cloud API  [3] Distributed Scraper  [4] Hermes Agent</text>
+    
+    <text class="dim" x="0" y="88">&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;</text>
+  </g>
+
+  <!-- Phosphor Spectrum Bars (Right Side) -->
+  <g filter="url(#pGlow)" transform="translate(990, 100) scale(1, -1)">
+    <rect class="p-eq1" x="0" y="0" width="12" height="60" fill="#00ff66"/>
+    <rect class="p-eq2" x="18" y="0" width="12" height="60" fill="#00ff66"/>
+    <rect class="p-eq3" x="36" y="0" width="12" height="60" fill="#00ff66"/>
+    <rect class="p-eq4" x="54" y="0" width="12" height="60" fill="#00ff66"/>
+    <rect class="p-eq1" x="72" y="0" width="12" height="60" fill="#00ff66"/>
+    <rect class="p-eq2" x="90" y="0" width="12" height="60" fill="#00ff66"/>
+    <rect class="p-eq3" x="108" y="0" width="12" height="60" fill="#00ff66"/>
+    <rect class="p-eq4" x="126" y="0" width="12" height="60" fill="#00ff66"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" width="1200" height="310" role="img" aria-label="CRT System Diagnostics">
+  <defs>
+    <radialGradient id="spDarkVignette" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0a180a" stop-opacity="0.1"/>
+      <stop offset="90%" stop-color="#050a05" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#010301" stop-opacity="0.95"/>
+    </radialGradient>
+    <filter id="spGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .crt { font-family: ui-monospace, "Courier New", monospace; font-size: 12px; fill: #00ff66; }
+    .amber { font-family: ui-monospace, "Courier New", monospace; font-size: 11.5px; fill: #ffb000; }
+    .dim { font-family: ui-monospace, "Courier New", monospace; font-size: 11px; fill: #1d7734; }
+  </style>
+
+  <rect width="1200" height="310" rx="8" fill="#141714" stroke="#252b25" stroke-width="2"/>
+  <rect x="8" y="8" width="1184" height="294" rx="6" fill="#050e05"/>
+  <rect x="8" y="8" width="1184" height="294" fill="url(#spDarkVignette)"/>
+
+  <g filter="url(#spGlow)" transform="translate(36, 36)">
+    <text class="dim" x="0" y="0">&#x250C;&#x2500;&#x2500;[ DIAGNOSTIC UTILITY: sys_info --verbose --verified ]&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;</text>
+
+    <text class="crt" x="20" y="28" font-weight="bold">SYSTEM HOSTNAME  : PORAS-SYSTEMS-01 [POSIX / LINUX WORKSTATION]</text>
+    <text class="crt" x="20" y="48">OPERATOR         : PORAS NAGAR (FULL-STACK DEVELOPER &amp; AI SYSTEMS ENGINEER)</text>
+    <text class="crt" x="20" y="68">CREDENTIALS      : B.TECH COMPUTER SCIENCE (HONS. AI &amp; ML), AMITY UNIVERSITY</text>
+    <text class="amber" x="20" y="88">CORE ENGINE 01   : LUMAVOICE (HINDI LIP-READING CNN-LSTM PHONEME CLASSIFIER)</text>
+    <text class="amber" x="20" y="108">CORE ENGINE 02   : HOSPITAL WHATSAPP TRIAGE WEBHOOK (META CLOUD API / 142ms ACK)</text>
+    <text class="amber" x="20" y="128">CORE ENGINE 03   : HIGH-THROUGHPUT SCRAPER BROKER (10,480 PG/MIN / RABBITMQ + REDIS)</text>
+    <text class="amber" x="20" y="148">CORE ENGINE 04   : HERMES MULTI-AGENT AUTONOMOUS CI DOCUMENT PIPELINE</text>
+    <text class="crt" x="20" y="168">STATUS           : ONLINE [UPTIME: 99.98%] • OPEN FOR FULL-TIME GLOBAL ROLES</text>
+    <text class="dim" x="20" y="188">DISPATCH CHANNELS: poras9868@gmail.com | linkedin.com/in/poras-nagar-036886189</text>
+
+    <text class="dim" x="0" y="214">&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;</text>
+    <text class="crt" x="20" y="238">ENTER 'reboot' TO RESET BUFFER • 'connect' TO INITIATE INTERVIEW SEQUENCE</text>
+  </g>
+</svg>

@@ -11,12 +11,10 @@
     }
   </style>
 
-  <!-- Sunken Inset Panel -->
   <rect width="1200" height="36" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
   <line x1="1" y1="1" x2="1199" y2="1" stroke="#ffffff"/>
   <line x1="1" y1="1" x2="1" y2="35" stroke="#ffffff"/>
 
-  <!-- Inset Ticker Box -->
   <rect x="4" y="4" width="1192" height="28" fill="#ffffea" stroke="#808080" stroke-width="1"/>
   <line x1="4" y1="4" x2="1195" y2="4" stroke="#404040"/>
   <line x1="4" y1="4" x2="4" y2="31" stroke="#404040"/>
@@ -24,7 +22,7 @@
   <g clip-path="url(#tk_clip)">
     <g class="ticker-scroll">
       <text class="ticker-font" x="0" y="22">
-        📢 [OTC VALUATION ENGINE]: Live price discovery running • [B-TREE TIME-SERIES]: sub-15ms reads • ⚡ [SCRAPER CLUSTER]: 10,480 pages/min fan-out • 💬 [TRIAGE GATEWAY]: Meta WhatsApp Cloud API 142ms ack • 🤖 [HERMES AGENT]: Multi-agent CI document synthesis • 🎓 [EDUCATION]: B.Tech CSE (Hons. AI &amp; ML) Amity University • 💼 [AVAILABILITY]: Open to Global AI &amp; Distributed Backend Roles
+        📢 [OPERATOR]: Poras Nagar • Independent AI Engineer &amp; Distributed Systems Builder • 🧠 [LUMAVOICE]: Lip-reading deep learning model (Hindi phoneme extraction) • ⚡ [SCRAPER CLUSTER]: 10,480 pages/min fan-out • 💬 [TRIAGE GATEWAY]: Meta WhatsApp Cloud API 142ms ack • 🤖 [HERMES AGENT]: Multi-agent CI document synthesis • 🎓 [EDUCATION]: B.Tech CSE (Hons. AI &amp; ML) Amity University • 💼 [AVAILABILITY]: Open to Global AI &amp; Distributed Backend Roles
       </text>
     </g>
   </g>
