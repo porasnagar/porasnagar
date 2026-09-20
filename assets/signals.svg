@@ -45,7 +45,7 @@
       <text class="crt" x="0" y="116">SQL, Redis &amp; Queue Ingestion    [12%]</text>
       <text class="crt" x="0" y="132">████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <text class="crt" x="0" y="162">Infra, Docker &amp; CI Workflows    [19%]</text>
+      <text class="crt" x="0" y="162">Infra, Docker &amp; CI Workflows    [18%]</text>
       <text class="crt" x="0" y="178">██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
     </g>
 

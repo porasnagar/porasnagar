@@ -107,7 +107,7 @@
         </g>
 
         <!-- Infrastructure & CI -->
-        <text class="w98-bold" x="0" y="170">Docker, Linux &amp; GitHub Actions CI Pipelines: 19%</text>
+        <text class="w98-bold" x="0" y="170">Docker, Linux &amp; GitHub Actions CI Pipelines: 18%</text>
         <g transform="translate(0, 178)">
           <rect width="548" height="16" fill="#ffffff" stroke="#808080"/>
           <rect x="3" y="2" width="16" height="12" fill="#008000"/><rect x="22" y="2" width="16" height="12" fill="#008000"/>
