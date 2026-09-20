@@ -75,7 +75,7 @@
 
       <g transform="translate(18, 38)">
         <!-- Python -->
-        <text class="w98-bold" x="0" y="14">Python (Backend, ML &amp; Quant Pipelines): 29%</text>
+        <text class="w98-bold" x="0" y="14">Python (Backend, ML &amp; Quant Pipelines): 31%</text>
         <!-- Segmented Royal Blue Progress Bar Chunks -->
         <g transform="translate(0, 22)">
           <rect width="548" height="20" fill="#ffffff" stroke="#808080"/>
@@ -89,7 +89,7 @@
         </g>
 
         <!-- TypeScript & Node -->
-        <text class="w98-bold" x="0" y="66">TypeScript &amp; JavaScript (React, Next.js, Express): 49%</text>
+        <text class="w98-bold" x="0" y="66">TypeScript &amp; JavaScript (React, Next.js, Express): 48%</text>
         <g transform="translate(0, 74)">
           <rect width="548" height="20" fill="#ffffff" stroke="#808080"/>
           <rect x="3" y="3" width="16" height="14" fill="#1084d0"/><rect x="22" y="3" width="16" height="14" fill="#1084d0"/>

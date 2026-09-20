@@ -36,10 +36,10 @@
     <!-- Right Column: Language Distribution Bars in ASCII -->
     <g transform="translate(560, 60)">
       <text class="amber" x="0" y="0">[ CODEBASE COMPOSITION &amp; BYTE DISTRIBUTION ]</text>
-      <text class="crt" x="0" y="24">Python (Backend, ML, Models)   [29%]</text>
+      <text class="crt" x="0" y="24">Python (Backend, ML, Models)   [31%]</text>
       <text class="crt" x="0" y="40">████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <text class="crt" x="0" y="70">TypeScript &amp; Node (React/APIs)  [49%]</text>
+      <text class="crt" x="0" y="70">TypeScript &amp; Node (React/APIs)  [48%]</text>
       <text class="crt" x="0" y="86">██████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
       <text class="crt" x="0" y="116">SQL, Redis &amp; Queue Ingestion    [12%]</text>
