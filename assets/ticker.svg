@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 36" width="1200" height="36" role="marquee" aria-label="CRT Stream Ticker">
+  <defs>
+    <filter id="crt_tk_glow">
+      <feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="crt_tk_clip"><rect x="8" y="4" width="1184" height="28" rx="2"/></clipPath>
+  </defs>
+  <style>
+    .crt-tk { font-family: ui-monospace, "Courier New", monospace; font-size: 12px; fill: #00ff66; }
+    .scroll-crt { animation: scrollCrt 32s linear infinite; }
+    @keyframes scrollCrt {
+      0%   { transform: translateX(1180px); }
+      100% { transform: translateX(-2400px); }
+    }
+  </style>
+
+  <rect width="1200" height="36" rx="4" fill="#070b07" stroke="#1a2b1a" stroke-width="1.5"/>
+  <g clip-path="url(#crt_tk_clip)">
+    <g filter="url(#crt_tk_glow)" class="scroll-crt">
+      <text class="crt-tk" x="0" y="22">
+        &gt;&gt;&gt; [OTC_VALUATION]: STREAMING BID/ASK DEPTH &gt;&gt;&gt; [SCRAPER_QUEUE]: 0 DROPPED RECORDS &gt;&gt;&gt; [TRIAGE_DISPATCH]: MONGO_SESSION_LOCKED &gt;&gt;&gt; [HERMES_CI]: DOCX/PPTX SYNTHESIS OK &gt;&gt;&gt; [COMMITS]: VERIFIED &gt;&gt;&gt; [STATUS]: READY FOR GLOBAL ROLES &gt;&gt;&gt;
+      </text>
+    </g>
+  </g>
+</svg>

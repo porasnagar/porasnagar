@@ -1,29 +1,43 @@
 <!--
   ══════════════════════════════════════════════════════════════
-  porasnagar/porasnagar — profile README
-  Every place you need to change something is marked  ✎
-  Nothing here needs CSS: all styling lives inside assets/*.svg
+  porasnagar/porasnagar — Dual Retro OS Profile README
+  Windows 98 Light Mode & 90s Phosphor CRT Dark Terminal
+  Auto-updated via GitHub Actions CI Telemetry Pipeline
   ══════════════════════════════════════════════════════════════
 -->
 
-<!-- ✎ HERO — edit the text inside assets/hero.svg AND assets/hero-light.svg -->
+<!-- 1. HERO CONSOLE -->
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/hero.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img src="assets/hero-light.svg" alt="Poras Nagar — AI Engineer, Distributed Systems, Full-Stack Developer" width="100%">
+  <img src="assets/hero-light.svg" alt="Poras Nagar — Profile Console" width="100%">
 </picture>
 
-<!-- ─────────────────────────── NAV ─────────────────────────── -->
+<!-- 2. TASKBAR -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/taskbar.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/taskbar-light.svg">
+  <img src="assets/taskbar-light.svg" alt="Retro Taskbar" width="100%">
+</picture>
+
+<!-- 3. LIVE ENGINE TICKER (LOOPHOLE #19) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/ticker.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/ticker-light.svg">
+  <img src="assets/ticker-light.svg" alt="Live Engine Ticker" width="100%">
+</picture>
+
+<br>
+
+<!-- 4. PHYSICAL KEYBOARD HOTKEYS TOOLBAR (LOOPHOLE #79) -->
 <div align="center">
 
-<a href="#systems"><img src="https://img.shields.io/badge/Systems.exe-000080?style=flat-square&logo=windows95&logoColor=white" alt="Systems"></a>
-<a href="#stack"><img src="https://img.shields.io/badge/Stack.sys-008080?style=flat-square&logo=terminal&logoColor=white" alt="Stack"></a>
-<a href="#signals"><img src="https://img.shields.io/badge/Signals.log-008000?style=flat-square&logo=diagnostics&logoColor=white" alt="Signals"></a>
-<a href="#contact"><img src="https://img.shields.io/badge/Contact.bat-800080?style=flat-square&logo=mail&logoColor=white" alt="Contact"></a>
-
-<a href="https://porasnagar.github.io"><img src="https://img.shields.io/badge/Portfolio.url-000080?style=flat-square&logo=internetexplorer&logoColor=white" alt="Portfolio"></a>
-<a href="https://unlistedstox.com"><img src="https://img.shields.io/badge/UnlistedStox.exe-008080?style=flat-square&logo=tradingview&logoColor=white" alt="UnlistedStox"></a>
-<a href="https://linkedin.com/in/poras-nagar-036886189"><img src="https://img.shields.io/badge/LinkedIn.url-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="#systems"><kbd>Alt</kbd>+<kbd>S</kbd> <b>Systems.exe</b></a> &nbsp;│&nbsp;
+<a href="#stack"><kbd>Alt</kbd>+<kbd>D</kbd> <b>Device_Manager.msc</b></a> &nbsp;│&nbsp;
+<a href="#signals"><kbd>Alt</kbd>+<kbd>M</kbd> <b>Sys_Monitor.exe</b></a> &nbsp;│&nbsp;
+<a href="#contact"><kbd>Alt</kbd>+<kbd>C</kbd> <b>Outlook_Express.exe</b></a> &nbsp;│&nbsp;
+<a href="https://porasnagar.github.io" target="_blank"><kbd>Win</kbd>+<kbd>E</kbd> <b>Portfolio.url</b></a> &nbsp;│&nbsp;
+<a href="https://linkedin.com/in/poras-nagar-036886189" target="_blank"><kbd>Ctrl</kbd>+<kbd>L</kbd> <b>LinkedIn.url</b></a>
 
 </div>
 
@@ -36,7 +50,6 @@ workers, the schemas that stop a scraper from lying to a trading screen.
 Most of my work lives in Indian pre-IPO and unlisted equity markets, where the
 data is messy, thinly traded, and nobody else has cleaned it up yet.
 
-<!-- ✎ swap any of these values -->
 ```yaml
 operator:   Poras Nagar
 role:       Full-Stack Developer & Product Manager  # @ EnxtAI / SMC Global Securities
@@ -56,10 +69,9 @@ open_to:  [ AI engineering, applied AI, backend-heavy full-stack ]
 
 <!-- ─────────────────────────── SYSTEMS ─────────────────────────── -->
 <a name="systems"></a>
-<h3 align="center">Systems in production</h3>
-<p align="center"><sub>Four things I'd be happy to be interviewed about line by line.</sub></p>
+<h3 align="center">Systems in Production</h3>
+<p align="center"><sub>Four distributed production systems I'd be happy to be interviewed about line by line.</sub></p>
 
-<!-- ✎ replace cards freely — keep the 2×2 shape, it reads best on mobile -->
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
@@ -73,8 +85,8 @@ open_to:  [ AI engineering, applied AI, backend-heavy full-stack ]
 </a>
 
 <h4>UnlistedStox</h4>
-<img src="https://img.shields.io/badge/live-in_production-22d3ee?style=flat-square&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/domain-fintech-7c5cff?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/live-in_production-008000?style=flat-square" alt="">
+<img src="https://img.shields.io/badge/domain-fintech-000080?style=flat-square" alt="">
 
 <p>An OTC equity pricing and valuation platform. It turns historical
 transactions, debt-to-equity metrics and statutory cap-table filings into
@@ -99,8 +111,8 @@ a live price for shares that never touch an exchange.</p>
 </picture>
 
 <h4>Hospital triage over WhatsApp</h4>
-<img src="https://img.shields.io/badge/channel-Meta_Cloud_API-25D366?style=flat-square&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/type-triage_bot-f59e0b?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/channel-Meta_Cloud_API-25D366?style=flat-square" alt="">
+<img src="https://img.shields.io/badge/type-triage_bot-800080?style=flat-square" alt="">
 
 <p>Patients book slots, submit intake and receive pathology reports without
 leaving WhatsApp — no app install, which is the whole point in a tier-2
@@ -126,8 +138,8 @@ hospital's catchment area.</p>
 </picture>
 
 <h4>Market scrapers &amp; queue broker</h4>
-<img src="https://img.shields.io/badge/throughput-10k%2B_pages%2Fmin-7c5cff?style=flat-square&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/queue-Redis_%2B_RabbitMQ-FF6600?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/throughput-10k%2B_pages%2Fmin-000080?style=flat-square" alt="">
+<img src="https://img.shields.io/badge/queue-Redis_%2B_RabbitMQ-800000?style=flat-square" alt="">
 
 <p>The ingestion layer everything else sits on. A distributed extraction
 cluster that pulls OTC valuations, filings and registrar data, then
@@ -151,8 +163,8 @@ normalises it into one schema before anything downstream sees it.</p>
 </picture>
 
 <h4>Multi-agent internal tooling</h4>
-<img src="https://img.shields.io/badge/scope-internal_platform-22d3ee?style=flat-square&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=flat-square&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/scope-internal_platform-008080?style=flat-square" alt="">
+<img src="https://img.shields.io/badge/CI-GitHub_Actions-000080?style=flat-square" alt="">
 
 <p>Agentic tooling deployed across our repos: it drafts documents, generates
 decks and spreadsheets, and takes the repetitive half of engineering
@@ -174,80 +186,59 @@ paperwork off the team's plate.</p>
 
 <!-- ─────────────────────────── STACK ─────────────────────────── -->
 <a name="stack"></a>
-<h3 align="center">Stack</h3>
-<p align="center"><sub>Grouped by what I reach for, not by what I've read about.</sub></p>
+<h3 align="center">Runtime Stack &amp; Installed Drivers</h3>
+<p align="center"><sub>Organized by system layer and active production runtimes.</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/stack.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-  <img src="assets/stack.svg" width="100%" alt="Production Tech Stack">
+  <img src="assets/stack-light.svg" width="100%" alt="Production Tech Stack">
 </picture>
 
 <br><br>
 
-<div align="center">
-
-<!-- ✎ the daily-drivers row stays open; everything else is collapsed -->
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0d1117" alt="">
-
-</div>
-
 <details>
-<summary><b>&nbsp;Everything else, by layer</b></summary>
+<summary><b>&nbsp;Expand Complete Driver Registry</b></summary>
 <br>
 <div align="center">
 
 <table width="100%">
 <tr>
-<td align="right" width="26%"><sub><b>AI / ML</b></sub></td>
+<td align="right" width="26%"><sub><b>AI &amp; ML Models</b></sub></td>
 <td>
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/PyTorch-000080?style=flat-square&logo=pytorch&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/TensorFlow-008080?style=flat-square&logo=tensorflow&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/Keras-800000?style=flat-square&logo=keras&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/OpenCV-000080?style=flat-square&logo=opencv&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/scikit--learn-008000?style=flat-square&logo=scikitlearn&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/Pandas-000080?style=flat-square&logo=pandas&logoColor=white" alt="">
 </td>
 </tr>
 <tr>
-<td align="right"><sub><b>Backend &amp; pipelines</b></sub></td>
+<td align="right"><sub><b>Backend &amp; Queues</b></sub></td>
 <td>
-<img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/WhatsApp_Cloud_API-25D366?style=flat-square&logo=whatsapp&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Python_3.12-000080?style=flat-square&logo=python&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/FastAPI-008080?style=flat-square&logo=fastapi&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/Node.js-008000?style=flat-square&logo=nodedotjs&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/RabbitMQ-800000?style=flat-square&logo=rabbitmq&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/Redis-800000?style=flat-square&logo=redis&logoColor=white" alt="">
 </td>
 </tr>
 <tr>
-<td align="right"><sub><b>Frontend</b></sub></td>
+<td align="right"><sub><b>Databases</b></sub></td>
 <td>
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/PostgreSQL-000080?style=flat-square&logo=postgresql&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/MongoDB-008000?style=flat-square&logo=mongodb&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/MySQL-008080?style=flat-square&logo=mysql&logoColor=white" alt="">
 </td>
 </tr>
 <tr>
-<td align="right"><sub><b>Data</b></sub></td>
+<td align="right"><sub><b>Infrastructure</b></sub></td>
 <td>
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white&labelColor=0d1117" alt="">
-</td>
-</tr>
-<tr>
-<td align="right"><sub><b>Infra</b></sub></td>
-<td>
-<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117" alt="">
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white&labelColor=0d1117" alt="">
+<img src="https://img.shields.io/badge/Docker-000080?style=flat-square&logo=docker&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/GitHub_Actions-000080?style=flat-square&logo=githubactions&logoColor=white" alt="">
+<img src="https://img.shields.io/badge/Linux_POSIX-008000?style=flat-square&logo=linux&logoColor=white" alt="">
 </td>
 </tr>
 </table>
@@ -259,18 +250,20 @@ paperwork off the team's plate.</p>
 
 <!-- ─────────────────────────── SIGNALS ─────────────────────────── -->
 <a name="signals"></a>
-<h3 align="center">Signals</h3>
+<h3 align="center">System Telemetry &amp; Resource Monitor</h3>
+<p align="center"><sub>Live telemetry stream refreshed automatically via GitHub Actions CI.</sub></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="assets/signals.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/signals-light.svg">
-  <img src="assets/signals.svg" width="100%" alt="Production Signals &amp; Telemetry">
+  <img src="assets/signals-light.svg" width="100%" alt="Production Signals &amp; Telemetry">
 </picture>
 
-<details open>
-<summary><b>&nbsp;Contribution calendar, in 3D</b></summary>
 <br>
-<!-- generated nightly by .github/workflows/profile-assets.yml -->
+
+<details open>
+<summary><b>&nbsp;Disk Defragmenter / Contribution Calendar (3D)</b></summary>
+<br>
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="profile-3d-contrib/profile-night-rainbow.svg">
   <img src="profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D contribution calendar">
@@ -278,7 +271,7 @@ paperwork off the team's plate.</p>
 </details>
 
 <details>
-<summary><b>&nbsp;The snake eats the graph</b></summary>
+<summary><b>&nbsp;Snake Eats the Cluster Sectors</b></summary>
 <br>
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/porasnagar/porasnagar/output/github-snake-dark.svg">
@@ -291,19 +284,23 @@ paperwork off the team's plate.</p>
 
 <!-- ─────────────────────────── CONTACT ─────────────────────────── -->
 <a name="contact"></a>
-<h3 align="center">Say hello</h3>
+<h3 align="center">Outlook Express 5.0 - Contact Console</h3>
 
-<p align="center">
-Fastest way to reach me is email. I read everything; I answer anything
-with a concrete question in it.
-</p>
+<a href="mailto:poras9868@gmail.com">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/contact.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/contact-light.svg">
+  <img src="assets/contact-light.svg" width="100%" alt="Outlook Express Contact Console">
+</picture>
+</a>
+
+<br><br>
 
 <div align="center">
 
-<!-- ✎ your handles -->
-<a href="mailto:poras9868@gmail.com"><img src="https://img.shields.io/badge/poras9868@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"></a>
-<a href="https://linkedin.com/in/poras-nagar-036886189"><img src="https://img.shields.io/badge/poras--nagar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"></a>
-<a href="https://porasnagar.github.io"><img src="https://img.shields.io/badge/porasnagar.github.io-7c5cff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0d1117" alt="Portfolio"></a>
+<a href="mailto:poras9868@gmail.com"><img src="https://img.shields.io/badge/Email.msg-poras9868%40gmail.com-800000?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://linkedin.com/in/poras-nagar-036886189" target="_blank"><img src="https://img.shields.io/badge/LinkedIn.url-poras--nagar-000080?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://porasnagar.github.io" target="_blank"><img src="https://img.shields.io/badge/Portfolio.url-porasnagar.github.io-008080?style=flat-square&logo=internetexplorer&logoColor=white" alt="Portfolio"></a>
 
 <br><br>
 <sub>Dual Retro OS Architecture (Microsoft Windows 98 Light Mode &amp; 90s Phosphor CRT Dark Mode) • Auto-updated via GitHub Actions.</sub>

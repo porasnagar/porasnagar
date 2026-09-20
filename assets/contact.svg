@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="CRT Sendmail Console">
+  <defs>
+    <filter id="mail_glow">
+      <feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <style>
+    .crt { font-family: ui-monospace, "Courier New", monospace; font-size: 12px; fill: #00ff66; }
+    .amber { font-family: ui-monospace, "Courier New", monospace; font-size: 12px; fill: #ffb000; }
+    .dim { font-family: ui-monospace, "Courier New", monospace; font-size: 11px; fill: #1d7734; }
+  </style>
+
+  <rect width="1200" height="280" rx="8" fill="#141714" stroke="#252b25" stroke-width="3"/>
+  <rect x="8" y="8" width="1184" height="264" rx="6" fill="#040804"/>
+
+  <g filter="url(#mail_glow)" transform="translate(36, 36)">
+    <text class="amber" x="0" y="0" font-weight="bold">SENDMAIL DAEMON / INTERACTION CONSOLE - PORAS NAGAR</text>
+    <text class="dim" x="0" y="18">PROTOCOL: RFC 821 / SMTP ENCRYPTED • PORT: 587 (TLS) • STATUS: LISTENING</text>
+    <text class="crt" x="0" y="38">═════════════════════════════════════════════════════════════════════════════════════════════════</text>
+
+    <g transform="translate(0, 60)">
+      <text class="crt" x="0" y="0">&gt; RECIPIENT  : <tspan fill="#ffb000" font-weight="bold">poras9868@gmail.com</tspan> (Click to send email)</text>
+      <text class="crt" x="0" y="24">&gt; NETWORK    : https://linkedin.com/in/poras-nagar-036886189</text>
+      <text class="crt" x="0" y="48">&gt; PORTFOLIO  : https://porasnagar.github.io</text>
+      <text class="crt" x="0" y="72">&gt; NOTE       : Fastest way to reach me is email. All technical inquiries answered line-by-line.</text>
+      <text class="crt" x="0" y="96">&gt; SCOPE      : Open to AI engineering, distributed queue workers, and quantitative backends.</text>
+    </g>
+
+    <text class="dim" x="0" y="196">─────────────────────────────────────────────────────────────────────────────────────────</text>
+    <text class="dim" x="0" y="214">[CONNECTION POOL: 200 OK] [DAEMON UPTIME: 300+ DAYS] [ENCRYPTION: VERIFIED]</text>
+  </g>
+</svg>

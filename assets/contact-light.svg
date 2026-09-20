@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280" role="img" aria-label="Outlook Express 5.0 Contact Form">
+  <defs>
+    <linearGradient id="oe_tb" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000080"/><stop offset="100%" stop-color="#1084d0"/>
+    </linearGradient>
+    <clipPath id="oe_cp"><rect width="1200" height="280" rx="4"/></clipPath>
+  </defs>
+  <style>
+    .w98 { font-family: "MS Sans Serif", Tahoma, -apple-system, sans-serif; font-size: 11.5px; }
+    .w98-bold { font-family: "MS Sans Serif", Tahoma, -apple-system, sans-serif; font-size: 11.5px; font-weight: bold; }
+    .mono { font-family: ui-monospace, "Courier New", monospace; font-size: 12px; }
+  </style>
+
+  <g clip-path="url(#oe_cp)">
+    <!-- Main Window Outer Frame -->
+    <rect width="1200" height="280" fill="#c0c0c0" stroke="#000000" stroke-width="1"/>
+    <line x1="1" y1="1" x2="1199" y2="1" stroke="#ffffff" stroke-width="2"/>
+    <line x1="1" y1="1" x2="1" y2="279" stroke="#ffffff" stroke-width="2"/>
+    <line x1="2" y1="278" x2="1198" y2="278" stroke="#808080" stroke-width="2"/>
+    <line x1="1198" y1="2" x2="1198" y2="278" stroke="#808080" stroke-width="2"/>
+
+    <!-- Title Bar -->
+    <g transform="translate(4, 4)">
+      <rect width="1192" height="22" fill="url(#oe_tb)"/>
+      <text class="w98-bold" x="8" y="15" fill="#ffffff">New Message - [To: Poras Nagar &lt;poras9868@gmail.com&gt;]</text>
+      <!-- Buttons -->
+      <g transform="translate(1146, 2)">
+        <rect x="0" y="0" width="18" height="17" fill="#c0c0c0" stroke="#000000"/>
+        <line x1="1" y1="1" x2="17" y2="1" stroke="#ffffff"/><text class="w98-bold" x="5" y="12">_</text>
+        <rect x="22" y="0" width="18" height="17" fill="#c0c0c0" stroke="#000000"/>
+        <line x1="23" y1="1" x2="39" y2="1" stroke="#ffffff"/><path d="M26 3 L34 12 M34 3 L26 12" stroke="#000000" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- Menu Bar -->
+    <g transform="translate(10, 30)">
+      <text class="w98" x="0" y="14"><tspan text-decoration="underline">F</tspan>ile</text>
+      <text class="w98" x="32" y="14"><tspan text-decoration="underline">E</tspan>dit</text>
+      <text class="w98" x="64" y="14"><tspan text-decoration="underline">V</tspan>iew</text>
+      <text class="w98" x="100" y="14"><tspan text-decoration="underline">I</tspan>nsert</text>
+      <text class="w98" x="144" y="14"><tspan text-decoration="underline">F</tspan>ormat</text>
+      <text class="w98" x="194" y="14"><tspan text-decoration="underline">T</tspan>ools</text>
+      <text class="w98" x="236" y="14"><tspan text-decoration="underline">M</tspan>essage</text>
+      <text class="w98" x="296" y="14"><tspan text-decoration="underline">H</tspan>elp</text>
+    </g>
+    <line x1="4" y1="48" x2="1196" y2="48" stroke="#808080"/>
+    <line x1="4" y1="49" x2="1196" y2="49" stroke="#ffffff"/>
+
+    <!-- Outlook Express Toolbar Buttons -->
+    <g transform="translate(10, 54)">
+      <!-- Send Button -->
+      <rect x="0" y="0" width="70" height="26" fill="#c0c0c0" stroke="#000000"/>
+      <line x1="1" y1="1" x2="69" y2="1" stroke="#ffffff"/><text class="w98-bold" x="14" y="17" fill="#000080">✉️ Send</text>
+
+      <!-- Cut -->
+      <rect x="76" y="0" width="56" height="26" fill="#c0c0c0" stroke="#000000"/>
+      <line x1="77" y1="1" x2="131" y2="1" stroke="#ffffff"/><text class="w98" x="90" y="17">✂️ Cut</text>
+
+      <!-- Copy -->
+      <rect x="136" y="0" width="60" height="26" fill="#c0c0c0" stroke="#000000"/>
+      <line x1="137" y1="1" x2="195" y2="1" stroke="#ffffff"/><text class="w98" x="148" y="17">📋 Copy</text>
+
+      <!-- Attach -->
+      <rect x="200" y="0" width="70" height="26" fill="#c0c0c0" stroke="#000000"/>
+      <line x1="201" y1="1" x2="269" y2="1" stroke="#ffffff"/><text class="w98" x="210" y="17">📎 Attach</text>
+    </g>
+    <line x1="4" y1="86" x2="1196" y2="86" stroke="#808080"/>
+
+    <!-- Header Fields (Sunken Inset Panels) -->
+    <g transform="translate(14, 94)">
+      <!-- To -->
+      <text class="w98-bold" x="0" y="18">To:</text>
+      <rect x="64" y="4" width="1108" height="22" fill="#ffffff" stroke="#808080"/>
+      <text class="mono" x="72" y="19" fill="#000080" font-weight="bold">poras9868@gmail.com  (Click to compose email)</text>
+
+      <!-- Cc -->
+      <text class="w98-bold" x="0" y="44">Cc:</text>
+      <rect x="64" y="30" width="1108" height="22" fill="#ffffff" stroke="#808080"/>
+      <text class="mono" x="72" y="45" fill="#000000">https://linkedin.com/in/poras-nagar-036886189</text>
+
+      <!-- Subject -->
+      <text class="w98-bold" x="0" y="70">Subject:</text>
+      <rect x="64" y="56" width="1108" height="22" fill="#ffffff" stroke="#808080"/>
+      <text class="mono" x="72" y="71" fill="#404040">Engineering Inquiry / AI &amp; Distributed Backend Collaboration</text>
+    </g>
+
+    <!-- Message Body (Sunken White Paper) -->
+    <g transform="translate(14, 180)">
+      <rect width="1172" height="66" fill="#ffffff" stroke="#808080"/>
+      <line x1="1" y1="1" x2="1171" y2="1" stroke="#404040"/>
+      <text class="mono" x="16" y="26" fill="#000000">"Fastest way to reach me is email. I read everything; I answer anything with a concrete technical question in it."</text>
+      <text class="mono" x="16" y="48" fill="#808080">&gt; Available for applied AI, distributed queue pipelines, and quantitative equity backend roles.</text>
+    </g>
+
+    <!-- Status Bar -->
+    <g transform="translate(14, 252)">
+      <rect width="1172" height="20" fill="#c0c0c0" stroke="#808080"/>
+      <text class="w98" x="8" y="14">Dial-Up Networking: Connected at 56,000 bps • SMTP Server Ready (smtp.gmail.com)</text>
+    </g>
+  </g>
+</svg>
