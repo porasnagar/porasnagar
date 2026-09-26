@@ -28,7 +28,7 @@
       <text class="crt" x="0" y="64">│ Distributed Scrapers  : 10k+ pages/min (Backpressure)  │</text>
       <text class="crt" x="0" y="84">│ WhatsApp Webhook Ack  : &lt; 200 ms (HMAC-SHA256 verified)│</text>
       <text class="crt" x="0" y="104">│ Total GitHub Commits  : 1,200+ across repositories    │</text>
-      <text class="crt" x="0" y="124">│ Public Repositories   : 18 active repositories      │</text>
+      <text class="crt" x="0" y="124">│ Public Repositories   : 19 active repositories      │</text>
       <text class="crt" x="0" y="144">│ Multi-Agent CI Tools  : Hermes Autonomous Doc Pipeline │</text>
       <text class="crt" x="0" y="164">└────────────────────────────────────────────────────────┘</text>
     </g>
@@ -36,16 +36,16 @@
     <!-- Right Column: Language Distribution Bars in ASCII -->
     <g transform="translate(560, 60)">
       <text class="amber" x="0" y="0">[ CODEBASE COMPOSITION &amp; BYTE DISTRIBUTION ]</text>
-      <text class="crt" x="0" y="24">Python (Backend, ML, Models)   [35%]</text>
+      <text class="crt" x="0" y="24">Python (Backend, ML, Models)   [30%]</text>
       <text class="crt" x="0" y="40">████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <text class="crt" x="0" y="70">TypeScript &amp; Node (React/APIs)  [45%]</text>
+      <text class="crt" x="0" y="70">TypeScript &amp; Node (React/APIs)  [48%]</text>
       <text class="crt" x="0" y="86">██████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
       <text class="crt" x="0" y="116">SQL, Redis &amp; Queue Ingestion    [12%]</text>
       <text class="crt" x="0" y="132">████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <text class="crt" x="0" y="162">Infra, Docker &amp; CI Workflows    [18%]</text>
+      <text class="crt" x="0" y="162">Infra, Docker &amp; CI Workflows    [20%]</text>
       <text class="crt" x="0" y="178">██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
     </g>
 
