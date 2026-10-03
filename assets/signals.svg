@@ -39,13 +39,13 @@
       <text class="crt" x="0" y="24">Python (Backend, ML, Models)   [28%]</text>
       <text class="crt" x="0" y="40">████████████████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <text class="crt" x="0" y="70">TypeScript &amp; Node (React/APIs)  [49%]</text>
+      <text class="crt" x="0" y="70">TypeScript &amp; Node (React/APIs)  [50%]</text>
       <text class="crt" x="0" y="86">██████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
       <text class="crt" x="0" y="116">SQL, Redis &amp; Queue Ingestion    [12%]</text>
       <text class="crt" x="0" y="132">████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
 
-      <text class="crt" x="0" y="162">Infra, Docker &amp; CI Workflows    [21%]</text>
+      <text class="crt" x="0" y="162">Infra, Docker &amp; CI Workflows    [20%]</text>
       <text class="crt" x="0" y="178">██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</text>
     </g>
 
