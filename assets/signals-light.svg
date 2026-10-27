@@ -63,7 +63,7 @@
         <text class="mono" x="12" y="24" fill="#00ff00" font-weight="bold">THROUGHPUT: 10,480 PAGES/MIN</text>
         <text class="mono" x="12" y="42" fill="#00ff00">QUERY LATENCY: &lt; 15ms (B-TREE OPTIMIZED)</text>
         <text class="mono" x="380" y="24" fill="#00ff00">TOTAL COMMITS: 1,200+</text>
-        <text class="mono" x="380" y="42" fill="#00ff00">REPOSITORIES: 21 ACTIVE</text>
+        <text class="mono" x="380" y="42" fill="#00ff00">REPOSITORIES: 22 ACTIVE</text>
       </g>
     </g>
 

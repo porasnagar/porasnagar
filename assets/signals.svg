@@ -28,7 +28,7 @@
       <text class="crt" x="0" y="64">│ Distributed Scrapers  : 10k+ pages/min (Backpressure)  │</text>
       <text class="crt" x="0" y="84">│ WhatsApp Webhook Ack  : &lt; 200 ms (HMAC-SHA256 verified)│</text>
       <text class="crt" x="0" y="104">│ Total GitHub Commits  : 1,200+ across repositories    │</text>
-      <text class="crt" x="0" y="124">│ Public Repositories   : 21 active repositories      │</text>
+      <text class="crt" x="0" y="124">│ Public Repositories   : 22 active repositories      │</text>
       <text class="crt" x="0" y="144">│ Multi-Agent CI Tools  : Hermes Autonomous Doc Pipeline │</text>
       <text class="crt" x="0" y="164">└────────────────────────────────────────────────────────┘</text>
     </g>
